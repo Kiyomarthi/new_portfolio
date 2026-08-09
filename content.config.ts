@@ -126,6 +126,21 @@ export default defineContentConfig({
         content: z.object({}),
         images: z.array(createImageSchema())
       })
+    }),
+    skills: defineCollection({
+      type: 'page',
+      source: 'skills.yml',
+      schema: z.object({
+        categories: z.array(z.object({
+          title: z.string().nonempty(),
+          description: z.string(),
+          icon: z.string(),
+          skills: z.array(z.object({
+            name: z.string().nonempty(),
+            level: z.enum(['Expert', 'Advanced', 'Intermediate', 'Beginner']).optional()
+          }))
+        }))
+      })
     })
   }
 })

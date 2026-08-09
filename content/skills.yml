@@ -1,0 +1,272 @@
+title: Skills & Technologies
+description: A comprehensive overview of the technologies, frameworks, and tools I work with across the full development stack.
+categories:
+  - title: Frontend Core
+    description: Modern frameworks and languages for building interactive web applications.
+    icon: i-lucide-monitor
+    skills:
+      - name: Vue.js
+        level: Expert
+      - name: Nuxt.js
+        level: Expert
+      - name: TypeScript
+        level: Expert
+      - name: JavaScript (ES6+)
+        level: Expert
+      - name: Vue Router
+        level: Expert
+      - name: Vite
+        level: Expert
+      - name: HTML5, css3
+        level: Expert
+
+  - title: State Management
+    description: Client-side state handling and data flow management.
+    icon: i-lucide-store
+    skills:
+      - name: Pinia
+        level: Expert
+      - name: Vuex
+        level: Advanced
+
+  - title: UI Frameworks & Libraries
+    description: Component libraries and styling frameworks for rapid UI development.
+    icon: i-lucide-component
+    skills:
+      - name: Nuxt UI
+        level: Expert
+      - name: Vuetify
+        level: Expert
+      - name: Tailwind CSS
+        level: Expert
+      - name: DaisyUI
+        level: Advanced
+      - name: Reka UI
+        level: Advanced
+      - name: UI Thing
+        level: Advanced
+      - name: Shadcn
+        level: MDI
+      - name: Tailwind Merge / Variants
+        level: Advanced
+      - name: SCSS / Sass
+        level: Expert
+
+  - title: SEO, Content & Localization
+    description: Search engine optimization, content management, and multi-language support.
+    icon: i-lucide-search
+    skills:
+      - name: "@nuxtjs/seo"
+        level: Expert
+      - name: nuxt-og-image
+        level: Expert
+      - name: nuxt-schema-org
+        level: Advanced
+      - name: "@nuxtjs/sitemap"
+        level: Advanced
+      - name: "@nuxtjs/robots"
+        level: Advanced
+      - name: nuxt-link-checker
+        level: Advanced
+      - name: "@nuxtjs/i18n"
+        level: Expert
+      - name: "@nuxt/content"
+        level: Expert
+      - name: "@nuxtjs/mdc"
+        level: Expert
+      - name: Nuxt Studio
+        level: Advanced
+      - name: SSR Rendering
+
+  - title: Backend & Infrastructure
+    description: Databases, ORMs, cloud storage, and realtime communication.
+    icon: i-lucide-server
+    skills:
+      - name: Prisma
+        level: Expert
+      - name: Drizzle ORM
+        level: Advanced
+      - name: MySQL2
+        level: Expert
+      - name: MariaDB
+        level: Expert
+      - name: "@libsql/client"
+        level: Advanced
+      - name: AWS SDK / S3
+        level: Advanced
+      - name: Vercel Blob
+        level: Advanced
+      - name: NuxtHub Core
+        level: Advanced
+      - name: Unstorage
+        level: Advanced
+      - name: Laravel Echo
+        level: Advanced
+      - name: Pusher.js
+        level: Advanced
+      - name: Socket.io Client
+        level: Advanced
+      - name: Redis
+
+  - title: Caching & Performance
+    description: Multi-layer caching strategy across the client, CDN, and server.
+    icon: i-lucide-zap
+    skills:
+      - name: Redis
+        level: Advanced
+      - name: Client/CDN Caching
+        level: Advanced
+      - name: State Management
+        level: Advanced
+      - name: Nitro Server Caching
+        level: Advanced
+
+  - title: API & Rendering
+    description: Server communication, API design, and rendering strategies.
+    icon: i-lucide-globe
+    skills:
+      - name: RESTful API
+        level: Expert
+      - name: Axios
+        level: Expert
+      - name: Nitro Server Routes (server/api)
+        level: Advanced
+      - name: ufo
+        level: Advanced
+      - name: Server-Side Rendering (SSR)
+        level: Expert
+      - name: Static Site Generation (SSG)
+        level: Expert
+
+  - title: AI Integration
+    description: AI SDK integration and streaming chat experiences.
+    icon: i-lucide-bot
+    skills:
+      - name: Vercel AI SDK
+        level: Advanced
+      - name: "@ai-sdk/vue"
+        level: Advanced
+      - name: "@ai-sdk/openai"
+        level: Advanced
+      - name: "@ai-sdk/anthropic"
+        level: Advanced
+      - name: "@ai-sdk/google"
+        level: Advanced
+      - name: Comark
+
+  - title: Forms & Validation
+    description: Form handling, validation, and input masking solutions.
+    icon: i-lucide-file-check
+    skills:
+      - name: VeeValidate
+        level: Expert
+      - name: Yup
+        level: Expert
+      - name: Zod
+        level: Expert
+      - name: Maska
+        level: Advanced
+      - name: Vue Currency Input
+        level: Advanced
+
+  - title: Maps & Geolocation
+    description: Mapping libraries and geolocation services integration.
+    icon: i-lucide-map
+    skills:
+      - name: OpenLayers
+        level: Advanced
+      - name: MapLibre GL JS
+        level: Advanced
+      - name: Leaflet
+        level: Advanced
+      - name: OpenStreetMap
+      - name: Neshan Maps Platform
+        level: Advanced
+
+  - title: UX & Content Tools
+    description: Icons, fonts, animation, rich text editing, and media/notification components.
+    icon: i-lucide-sparkles
+    skills:
+      - name: "@nuxt/icon"
+        level: Expert
+      - name: "@nuxt/fonts"
+        level: Expert
+      - name: "@nuxt/image"
+        level: Expert
+      - name: "@takumi-rs/core"
+        level: Advanced
+      - name: Motion-V
+        level: Expert
+      - name: AOS
+        level: Advanced
+      - name: Swiper
+        level: Expert
+      - name: VueDraggable
+        level: Advanced
+      - name: Vue Toastification
+        level: Expert
+      - name: Vue Sonner
+        level: Advanced
+      - name: Tiptap
+        level: Expert
+      - name: TinyMCE
+        level: Advanced
+
+  - title: PWA & Mobile
+    description: Progressive web apps and cross-platform mobile development.
+    icon: i-lucide-smartphone
+    skills:
+      - name: "@vite-pwa/nuxt"
+        level: Advanced
+      - name: Capacitor
+        level: Advanced
+
+  - title: Authentication & Security
+    description: User authentication, authorization, and security practices.
+    icon: i-lucide-shield
+    skills:
+      - name: JWT
+        level: Expert
+      - name: bcryptjs
+        level: Expert
+      - name: WebAuthn
+        level: Advanced
+      - name: nuxt-auth-utils
+        level: Advanced
+      - name: Firebase Cloud Messaging
+        level: Advanced
+      - name: Webpush
+
+  - title: Testing & Dev Tools
+    description: Code quality, testing frameworks, and developer workflow tooling.
+    icon: i-lucide-flask-conical
+    skills:
+      - name: Vitest
+        level: Expert
+      - name: Playwright
+        level: Advanced
+      - name: "@nuxt/test-utils"
+        level: Advanced
+      - name: happy-dom
+        level: Advanced
+      - name: "@nuxt/eslint"
+        level: Expert
+      - name: PM2
+        level: Advanced
+
+  - title: Utilities
+    description: Date handling and general-purpose utility libraries.
+    icon: i-lucide-package
+    skills:
+      - name: VueUse
+        level: Expert
+      - name: Lodash
+        level: Expert
+      - name: date-fns
+        level: Expert
+      - name: "@internationalized/date"
+        level: Advanced
+      - name: Vue3 Persian Datetime Picker
+        level: Advanced
+      - name: Jalali Moment
+        level: Advanced

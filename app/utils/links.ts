@@ -20,4 +20,8 @@ export const navLinks: NavigationMenuItem[] = [{
   label: 'About',
   icon: 'i-lucide-user',
   to: '/about'
+}, {
+  label: 'Skills',
+  icon: 'i-lucide-lightbulb',
+  to: '/skills'
 }]
