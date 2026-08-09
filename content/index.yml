@@ -1,8 +1,19 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Abolfazl Kiumarsi - Frontend Developer"
+  description: "Welcome to my portfolio! I'm a Frontend Developer specializing in Vue.js and Nuxt.js. I focus on building modern, responsive user interfaces and creating fast, scalable, and user-centered digital experiences."
+
+title: |
+  Hey, 
+  I'm Abolfazl Kiumarsi
+  Frontend Developer
+
+description: |
+  Frontend Developer specializing in Vue.js and Nuxt.js.
+  Experienced in building responsive, modern user interfaces using TailwindCSS & Nuxt UI.
+  Skilled in implementing multi-layer caching with Nitro and Redis, as well as technical SEO optimization and implementation.
+  Passionate about applying AI at the product level and leveraging AI-powered tools throughout the software development lifecycle.
+
+
 hero:
   links:
     - label: "Use this template"

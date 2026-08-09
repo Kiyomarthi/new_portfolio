@@ -28,6 +28,7 @@ content/*.yml, content/blog/*.md, content/projects/*.yml
 | `blog` | page | `blog/*.md` | Blog posts (Markdown body + front matter) |
 | `pages` | page | `projects.yml`, `blog.yml` | Listing page metadata |
 | `speaking` | page | `speaking.yml` | Speaking events grouped by category |
+| `skills` | page | `skills.yml` | Skills & technologies grouped by category |
 
 ## Per-Page Data Fetching
 
@@ -43,9 +44,14 @@ content/*.yml, content/blog/*.md, content/projects/*.yml
 3. Renders `page.images` as `PolaroidItem` components
 
 ### Projects (`/projects`) — `pages/projects.vue`
-1. Fetches `pages` collection at path `/projects`: `queryCollection('pages').path('/projects').first()`
-2. Fetches all projects: `queryCollection('projects').all()`
-3. Renders project cards with Motion staggered entrance
+1. Fetches `pages` collection at path `/projects`: `queryCollection('pages').path('/projects').first()` (for hero metadata)
+2. Renders via `<ModelProjectsList>` component which fetches `queryCollection('projects').order('date', 'DESC').all()`
+3. Component handles all project rendering with Motion animations
+
+### Projects on Home (`/`) — `pages/index.vue`
+1. Uses `<ModelProjectsList :show-more="true" :initial-limit="3" />`
+2. Component fetches its own data from `projects` collection
+3. Initially shows 3 projects, "Show More Projects" button reveals all
 
 ### Blog Listing (`/blog`) — `pages/blog/index.vue`
 1. Fetches `pages` collection at path `/blog`: `queryCollection('pages').path('/blog').first()`
@@ -62,6 +68,15 @@ content/*.yml, content/blog/*.md, content/projects/*.yml
 1. Fetches `speaking` collection: `queryCollection('speaking').first()`
 2. Groups events by category (Conference, Live talk, Podcast) via computed property
 3. Renders 3-column grid on desktop, stacked on mobile
+
+### Skills (`/skills`) — `pages/skills.vue`
+1. Fetches `skills` collection: `queryCollection('skills').first()`
+2. Renders via `<ModelSkills>` component (full list, no limit)
+
+### Skills on Home (`/`) — `pages/index.vue`
+1. Uses `<ModelSkills :show-more="true" :initial-limit="6" />`
+2. Component fetches its own data from `skills` collection
+3. Initially shows 6 categories, "Show More Skills" button reveals all
 
 ## Global Data (available everywhere)
 

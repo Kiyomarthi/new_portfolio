@@ -15,7 +15,7 @@ useSeoMeta({
   ogTitle: page.value?.seo.title || page.value?.title,
   description: page.value?.seo.description || page.value?.description,
   ogDescription: page.value?.seo.description || page.value?.description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png'
+  ogImage: '/images/profile.jpg'
 })
 </script>
 
@@ -33,5 +33,13 @@ useSeoMeta({
     <LandingBlog :page />
     <LandingTestimonials :page />
     <LandingFAQ :page />
+    <ModelSkills
+      :show-more="true"
+      :initial-limit="6"
+    />
+    <ModelProjectsList
+      :show-more="true"
+      :initial-limit="3"
+    />
   </UPage>
 </template>

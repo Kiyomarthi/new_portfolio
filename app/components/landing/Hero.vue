@@ -59,7 +59,9 @@ defineProps<{
           delay: 0.1
         }"
       >
-        {{ page.title }}
+        <p class="whitespace-pre-line leading-[55px]">
+          {{ page.title }}
+        </p>
       </Motion>
     </template>
 
@@ -80,7 +82,9 @@ defineProps<{
           delay: 0.3
         }"
       >
-        {{ page.description }}
+        <p class="whitespace-pre-line text-left whitespace-nowrap">
+          {{ page.description }}
+        </p>
       </Motion>
     </template>
 
@@ -105,19 +109,26 @@ defineProps<{
           v-if="page.hero.links"
           class="flex items-center gap-2"
         >
-          <UButton v-bind="page.hero.links[0]" />
+          <!-- <UButton v-bind="page.hero.links[0]" /> -->
           <UButton
             :color="global.available ? 'success' : 'error'"
             variant="ghost"
             class="gap-2"
             :to="global.available ? global.meetingLink : ''"
-            :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
+            :label="
+              global.available
+                ? 'Available for new projects'
+                : 'Not available at the moment'
+            "
+            target="_blank"
           >
             <template #leading>
               <span class="relative flex size-2">
                 <span
                   class="absolute inline-flex size-full rounded-full opacity-75"
-                  :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
+                  :class="
+                    global.available ? 'bg-success animate-ping' : 'bg-error'
+                  "
                 />
                 <span
                   class="relative inline-flex size-2 scale-90 rounded-full"
@@ -133,7 +144,6 @@ defineProps<{
         <Motion
           v-for="(link, index) of footer?.links"
           :key="index"
-
           :initial="{
             scale: 1.1,
             opacity: 0,

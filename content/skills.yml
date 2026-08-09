@@ -1,5 +1,4 @@
 title: Skills & Technologies
-description: A comprehensive overview of the technologies, frameworks, and tools I work with across the full development stack.
 categories:
   - title: Frontend Core
     description: Modern frameworks and languages for building interactive web applications.
@@ -19,7 +18,6 @@ categories:
         level: Expert
       - name: HTML5, css3
         level: Expert
-
   - title: State Management
     description: Client-side state handling and data flow management.
     icon: i-lucide-store
@@ -28,7 +26,6 @@ categories:
         level: Expert
       - name: Vuex
         level: Advanced
-
   - title: UI Frameworks & Libraries
     description: Component libraries and styling frameworks for rapid UI development.
     icon: i-lucide-component
@@ -51,7 +48,6 @@ categories:
         level: Advanced
       - name: SCSS / Sass
         level: Expert
-
   - title: SEO, Content & Localization
     description: Search engine optimization, content management, and multi-language support.
     icon: i-lucide-search
@@ -77,7 +73,6 @@ categories:
       - name: Nuxt Studio
         level: Advanced
       - name: SSR Rendering
-
   - title: Backend & Infrastructure
     description: Databases, ORMs, cloud storage, and realtime communication.
     icon: i-lucide-server
@@ -107,7 +102,6 @@ categories:
       - name: Socket.io Client
         level: Advanced
       - name: Redis
-
   - title: Caching & Performance
     description: Multi-layer caching strategy across the client, CDN, and server.
     icon: i-lucide-zap
@@ -120,7 +114,6 @@ categories:
         level: Advanced
       - name: Nitro Server Caching
         level: Advanced
-
   - title: API & Rendering
     description: Server communication, API design, and rendering strategies.
     icon: i-lucide-globe
@@ -137,7 +130,6 @@ categories:
         level: Expert
       - name: Static Site Generation (SSG)
         level: Expert
-
   - title: AI Integration
     description: AI SDK integration and streaming chat experiences.
     icon: i-lucide-bot
@@ -153,7 +145,6 @@ categories:
       - name: "@ai-sdk/google"
         level: Advanced
       - name: Comark
-
   - title: Forms & Validation
     description: Form handling, validation, and input masking solutions.
     icon: i-lucide-file-check
@@ -168,7 +159,6 @@ categories:
         level: Advanced
       - name: Vue Currency Input
         level: Advanced
-
   - title: Maps & Geolocation
     description: Mapping libraries and geolocation services integration.
     icon: i-lucide-map
@@ -182,7 +172,6 @@ categories:
       - name: OpenStreetMap
       - name: Neshan Maps Platform
         level: Advanced
-
   - title: UX & Content Tools
     description: Icons, fonts, animation, rich text editing, and media/notification components.
     icon: i-lucide-sparkles
@@ -211,7 +200,6 @@ categories:
         level: Expert
       - name: TinyMCE
         level: Advanced
-
   - title: PWA & Mobile
     description: Progressive web apps and cross-platform mobile development.
     icon: i-lucide-smartphone
@@ -220,7 +208,6 @@ categories:
         level: Advanced
       - name: Capacitor
         level: Advanced
-
   - title: Authentication & Security
     description: User authentication, authorization, and security practices.
     icon: i-lucide-shield
@@ -236,7 +223,6 @@ categories:
       - name: Firebase Cloud Messaging
         level: Advanced
       - name: Webpush
-
   - title: Testing & Dev Tools
     description: Code quality, testing frameworks, and developer workflow tooling.
     icon: i-lucide-flask-conical
@@ -253,7 +239,6 @@ categories:
         level: Expert
       - name: PM2
         level: Advanced
-
   - title: Utilities
     description: Date handling and general-purpose utility libraries.
     icon: i-lucide-package
@@ -270,3 +255,4 @@ categories:
         level: Advanced
       - name: Jalali Moment
         level: Advanced
+description: A comprehensive overview of the technologies, frameworks, and tools I work with across the full development stack.

@@ -43,6 +43,24 @@ When adding a new content collection:
 3. **Animations**: Use `Motion` from `motion-v` — never add custom CSS `@keyframes`
 4. **Search**: Only the blog collection is indexed for search. Do not add other collections to `queryCollectionSearchSections()`
 
+## Reusable Component Pattern
+
+When a feature contains UI, content fetching, data handling, or rendering logic that will be used by multiple pages, extract it into a reusable component. Pages should compose these components rather than duplicating the same logic.
+
+**Rules:**
+1. Shared functionality belongs in `app/components/` — not duplicated across pages.
+2. Create the reusable component first, then consume it from all pages that need it.
+3. Configurable behavior must be exposed through props (e.g., `showMore`, `initialLimit`).
+4. The component should handle its own data fetching via `useAsyncData` + `queryCollection` (like `landing/Blog.vue` does), unless the data comes from a parent-provided prop.
+5. Place reusable feature components under `app/components/model/` when they represent a domain concept (e.g., `ModelSkills.vue`).
+
+**Example structure:**
+```
+app/pages/skills.vue          → Uses <ModelSkills /> (full, no limit)
+app/pages/index.vue           → Uses <ModelSkills :show-more="true" :initial-limit="6" />
+app/components/model/Skills.vue  → Owns data fetching, rendering, and show-more logic
+```
+
 ## What NOT to Change
 
 - `nuxt.config.ts` `compatibilityDate` — pinned to `2026-06-30`

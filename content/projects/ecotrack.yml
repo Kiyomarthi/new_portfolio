@@ -1,6 +1,54 @@
 title: EcoTrack Sustainability App
 description: Created a mobile-first application to help users track and reduce their environmental impact. Translated complex sustainability metrics into an accessible and motivating user interface.
 image: https://images.unsplash.com/photo-1613858749733-3a3e456e3d9e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+images:
+  - src: https://images.unsplash.com/photo-1613858749733-3a3e456e3d9e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: EcoTrack main dashboard
+  - src: https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: Carbon footprint tracker
+  - src: https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: Sustainability goals view
 url: "#"
 tags: ["UX Research", "UI Design", "Mobile App"]
+technologies:
+  frontend:
+    - Vue.js
+    - Nuxt.js
+    - Capacitor
+  backend:
+    - Laravel
+    - MySQL
+  devops:
+    - Vercel
+    - GitHub Actions
+links:
+  - label: App Store
+    to: https://apps.apple.com/example/ecotrack
+    target: _blank
+    icon: i-lucide-apple
+  - label: Google Play
+    to: https://play.google.com/store/apps/example/ecotrack
+    target: _blank
+    icon: i-lucide-play
+challenges:
+  content: |
+    ## The Challenge
+
+    EcoTrack needed to make environmental data feel actionable rather than depressing. Users wanted to make a difference but felt overwhelmed by the scale of climate change.
+
+    ### Research Phase
+
+    Conducted surveys with 200+ participants and in-depth interviews with 30 environmentally-conscious users. Key findings:
+
+    - Users wanted **personalized recommendations**, not generic advice
+    - Gamification elements increased engagement significantly
+    - Social features helped maintain long-term motivation
+
+    ### Design Solution
+
+    Created a progress-focused interface with daily challenges, achievement badges, and community leaderboards. The key was making small actions feel meaningful through clear visual feedback.
+
+company: GreenTech Solutions
+startDate: "2023-03-01"
+endDate: "2023-09-15"
 date: "2023"

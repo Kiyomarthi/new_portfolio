@@ -42,6 +42,27 @@
 - Renders image in a white-bordered polaroid frame with rotation (`-rotate-5` or `rotate-5` alternating)
 - Hover: scale up, derotate, translate, z-index boost
 
+## Model Components
+
+Reusable feature components that handle their own data fetching and can be used across multiple pages.
+
+### `model/Skills.vue`
+- Props: `showMore?: boolean` (default `false`), `initialLimit?: number`
+- Fetches skills data via `queryCollection('skills').first()`
+- Renders skill categories as a `UPageGrid` of `UCard` components with `Motion` animations
+- When `showMore` is enabled and `initialLimit` is set: shows limited items + "Show More Skills" button
+- Clicking "Show More" reveals all remaining categories
+- Used by both `pages/skills.vue` (full list) and `pages/index.vue` (limited to 6 with show-more)
+
+### `model/projects/list.vue`
+- Props: `showMore?: boolean` (default `false`), `initialLimit?: number`
+- Fetches projects data via `queryCollection('projects').order('date', 'DESC').all()`
+- Renders each project as a `UCard` with image carousel, description, tags, and external link
+- Uses `NuxtImg` for optimized image rendering
+- When `showMore` is enabled and `initialLimit` is set: shows limited items + "Show More Projects" button
+- Clicking "Show More" reveals all remaining projects
+- Used by both `pages/projects.vue` (full list) and `pages/index.vue` (limited to 3 with show-more)
+
 ## Landing Section Components
 
 All landing components accept `page: IndexCollectionItem` as prop and render sections of the home page.

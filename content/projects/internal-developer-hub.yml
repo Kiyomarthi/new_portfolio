@@ -1,6 +1,59 @@
 title: Internal Developer Hub (Nuxt Team)
 description: Designed and built key components for an internal documentation and tooling hub for Nuxt developers, focusing on improving developer experience and streamlining access to resources.
-image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80 # Example image related to code/development
+image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+images:
+  - src: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: Developer hub main interface
+  - src: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: Documentation search feature
+  - src: https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: API reference pages
+  - src: https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: Integration dashboard
+  - src: https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: Team collaboration tools
+  - src: https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+    alt: Analytics and metrics
 url: "#"
 tags: ["Developer Tools", "UX Design", "Nuxt", "Design System", "Internal Tools"]
+technologies:
+  frontend:
+    - Nuxt.js
+    - Vue.js
+    - TypeScript
+    - Nuxt UI
+    - Tailwind CSS
+  backend:
+    - Nitro
+    - H3
+  content:
+    - Nuxt Content
+    - MDC
+  devops:
+    - NuxtHub
+    - Cloudflare
+challenges:
+  content: |
+    ## The Challenge
+
+    The Nuxt team needed a centralized hub that could serve as the single source of truth for all internal documentation, tooling, and resources. The existing scattered approach was causing inefficiency and knowledge loss.
+
+    ### Key Requirements
+
+    - **Unified Search**: One search bar to find anything across all documentation
+    - **Access Control**: Different permission levels for different team members
+    - **Integration**: Seamless connection with GitHub, Figma, and other tools
+    - **Performance**: Instant loading even with thousands of documents
+
+    ### Solution
+
+    Built a modular system using Nuxt Content as the backbone, with a custom search implementation using Fuse.js. The design system was built on top of Nuxt UI for consistency.
+
+    ### Impact
+
+    Reduced time spent searching for information by an estimated **60%** and significantly improved onboarding time for new team members.
+
+company: NuxtLabs
+startDate: "2024-02-01"
+endDate: "2024-08-31"
 date: "2024"

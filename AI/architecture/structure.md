@@ -16,6 +16,10 @@ portfolio/
 │   │   ├── PolaroidItem.vue      # Rotating polaroid-style image for About page
 │   │   ├── OgImage/
 │   │   │   └── Portfolio.takumi.vue  # OG image template (nuxt-og-image)
+│   │   ├── model/                # Reusable feature components with own data fetching
+│   │   │   ├── Skills.vue        # Skills grid, supports showMore + initialLimit props
+│   │   │   └── projects/
+│   │   │       └── list.vue      # Projects list with cards, supports showMore + initialLimit props
 │   │   └── landing/              # Home page section components
 │   │       ├── Hero.vue          # Hero with avatar, animated title, marquee images
 │   │       ├── About.vue         # About text section

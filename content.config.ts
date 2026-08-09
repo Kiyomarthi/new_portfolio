@@ -74,14 +74,21 @@ export default defineContentConfig({
       })
     }),
     projects: defineCollection({
-      type: 'data',
+      type: 'page',
       source: 'projects/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
+        images: z.array(createImageSchema()).optional(),
         url: z.string().nonempty(),
         tags: z.array(z.string()),
+        technologies: z.object({}).optional(),
+        links: z.array(createButtonSchema()).optional(),
+        challenges: z.object({}).optional(),
+        company: z.string().optional(),
+        startDate: z.date().optional(),
+        endDate: z.date().optional(),
         date: z.date()
       })
     }),
