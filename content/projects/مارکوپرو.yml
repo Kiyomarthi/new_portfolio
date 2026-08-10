@@ -2,15 +2,18 @@ title: سایت گردشگری مارکوپرو
 company: شاهان سفر پارس
 date: 2024-01-01
 description: توسعه و پیاده‌سازی فرانت‌اند سایت گردشگری مارکوپرو با تمرکز بر TypeScript، Nuxt UI، بهینه‌سازی عملکرد، معماری کش چندلایه و سئوی فنی.
-endDate: ""
-image: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+endDate: 2024-08-31
+image: ""
 images:
-  - src: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+  - src: /images/profile.jpg
     alt: صفحه اصلی سایت مارکوپرو
-  - src: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+  - src: images/profile.jpg
     alt: بخش نقشه پروژه با Leaflet
-  - src: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+  - src: /images/profile.jpg
     alt: بخش‌های کلیدی سایت مارکوپرو
+  - src: /images/profile.jpg
+  - src: /images/profile.jpg
+  - src: /images/profile.jpg
 links:
   - label: مشاهده سایت
     to: https://demo.marcopro.co/
