@@ -1,65 +1,59 @@
 <script setup lang="ts">
-type TechnologyGroup = Record<string, string[]>
+type TechnologyCategory = {
+  category: string;
+  items: string[];
+};
 
 const props = defineProps<{
-  technologies?: TechnologyGroup | string[] | object
-  tags?: string[]
-}>()
+  technologies?: TechnologyCategory[];
+  tags?: string[];
+}>();
 
 const isGrouped = computed(() => {
-  if (!props.technologies || Array.isArray(props.technologies)) return false
-  return Object.keys(props.technologies).length > 0
-})
-
-const isFlat = computed(() => {
-  return Array.isArray(props.technologies)
-})
+  return Array.isArray(props.technologies) && props.technologies.length > 0;
+});
 
 const flatList = computed(() => {
-  if (isFlat.value) return props.technologies as string[]
-  if (isGrouped.value) {
-    const techs = props.technologies as TechnologyGroup
-    return Object.values(techs).flat()
-  }
-  return []
-})
+  if (!isGrouped.value) return [];
+  return (props.technologies as TechnologyCategory[]).flatMap((g) => g.items);
+});
 
 const allTags = computed(() => {
-  const tags = props.tags || []
-  return [...tags, ...flatList.value]
-})
+  return [...(props.tags || []), ...flatList.value];
+});
 
 const groups = computed(() => {
-  if (!isGrouped.value) return []
-  const techs = props.technologies as TechnologyGroup
-  return Object.entries(techs).map(([key, values]) => ({
-    name: key.charAt(0).toUpperCase() + key.slice(1),
-    items: values
-  }))
-})
+  if (!isGrouped.value) return [];
+  return (props.technologies as TechnologyCategory[]).map((g) => ({
+    name: g.category.charAt(0).toUpperCase() + g.category.slice(1),
+    items: g.items,
+  }));
+});
 </script>
 
 <template>
   <UPageSection
-    title="Technologies"
+    title="فناوری‌ها"
     :ui="{
-      container: 'pt-0!',
-      title: 'text-left text-xl font-medium'
+      title: 'text-right text-h2 font-medium',
+      container: 'gap-5! py-12! pr-0!',
     }"
+    dir="ltr"
   >
     <!-- Grouped technologies -->
     <div v-if="isGrouped" class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div v-for="group in groups" :key="group.name">
-        <h4 class="text-sm font-semibold text-highlighted uppercase tracking-wide mb-3">
+        <h4 class="text-h3 font-semibold text-highlighted mb-3">
           {{ group.name }}
         </h4>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex text-h4 flex-wrap gap-2">
           <UBadge
             v-for="tech in group.items"
             :key="tech"
             :label="tech"
             variant="subtle"
             color="neutral"
+            class="text-h4"
           />
         </div>
       </div>
@@ -76,8 +70,6 @@ const groups = computed(() => {
       />
     </div>
 
-    <p v-else class="text-muted text-sm">
-      Technologies not specified.
-    </p>
+    <p v-else class="text-muted text-sm">فناوری‌ها مشخص نشده‌اند.</p>
   </UPageSection>
 </template>

@@ -39,8 +39,13 @@ function handleShowMore() {
 
 <template>
   <UPageSection
-    title="Projects"
-    description="A selection of projects I've worked on."
+    title="پروژه‌ها"
+    description="گزیده‌ای از پروژه‌هایی که روی آن‌ها کار کرده‌ام."
+    :ui="{
+      container: 'pt-0!',
+      title: 'text-right text-xl sm:text-xl lg:text-2xl font-medium',
+      description: 'text-right mt-2 text-sm sm:text-md lg:text-sm text-muted'
+    }"
   >
     <div class="mt-10 space-y-6">
       <Motion
@@ -63,7 +68,7 @@ function handleShowMore() {
             <div class="w-full shrink-0 md:w-[45%]">
               <NuxtImg
                 :src="project.image"
-                :alt="`${project.title} screenshot`"
+                :alt="`تصویر پروژه ${project.title}`"
                 class="aspect-video w-full object-cover md:h-full"
               />
             </div>
@@ -84,11 +89,11 @@ function handleShowMore() {
 
                 <UButton
                   :to="`/projects/${project.path?.replace('/projects/', '') || project.title.toLowerCase().replace(/\s+/g, '-')}`"
-                  icon="i-lucide-arrow-right"
+                  icon="i-lucide-arrow-left"
                   size="sm"
                   variant="ghost"
                   color="neutral"
-                  aria-label="View project details"
+                  aria-label="مشاهده جزئیات پروژه"
                 />
               </div>
 
@@ -109,7 +114,7 @@ function handleShowMore() {
                   :to="project.url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  label="Visit Project"
+                  label="بازدید از پروژه"
                   icon="i-lucide-arrow-up-right"
                   variant="outline"
                   color="neutral"
@@ -126,7 +131,7 @@ function handleShowMore() {
       class="flex justify-center mt-8"
     >
       <UButton
-        label="Show More Projects"
+        label="نمایش پروژه‌های بیشتر"
         color="neutral"
         variant="outline"
         trailing-icon="i-lucide-chevron-down"

@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import type { ProjectsCollectionItem } from '@nuxt/content'
 
-defineProps<{
+const props = defineProps<{
   project: ProjectsCollectionItem | null | undefined
+  challenges?: ProjectsCollectionItem | null
 }>()
 
 const route = useRoute()
@@ -17,13 +18,13 @@ const backPath = computed(() => {
     <div class="py-8">
       <ULink
         :to="backPath"
-        class="text-sm text-muted hover:text-highlighted transition-colors flex items-center gap-1"
+        class="text-sm text-muted hover:text-highlighted transition-colors flex items-center gap-2"
       >
         <UIcon
-          name="i-lucide-arrow-left"
+          name="i-lucide-arrow-right"
           class="size-4"
         />
-        Back to Projects
+        بازگشت به پروژه‌ها
       </ULink>
     </div>
 
@@ -32,7 +33,6 @@ const backPath = computed(() => {
       v-if="project.images && project.images.length > 0"
       :images="project.images"
       :url="project.url"
-
     />
 
     <!-- Title and main link -->
@@ -44,7 +44,9 @@ const backPath = computed(() => {
         rel="noopener noreferrer"
         class="group"
       >
-        <h1 class="text-4xl font-semibold text-highlighted inline-flex items-center gap-3 hover:text-primary transition-colors">
+        <h1
+          class="text-4xl font-semibold text-highlighted inline-flex items-center gap-3 hover:text-primary transition-colors"
+        >
           {{ project.title }}
           <UIcon
             name="i-lucide-external-link"
@@ -68,7 +70,7 @@ const backPath = computed(() => {
           :to="project.url"
           target="_blank"
           rel="noopener noreferrer"
-          label="Visit Project"
+          label="بازدید از پروژه"
           icon="i-lucide-external-link"
           color="primary"
           variant="solid"
@@ -77,23 +79,16 @@ const backPath = computed(() => {
     </div>
 
     <!-- Description -->
-    <UPageSection
-      :ui="{
-        container: 'pt-0!',
-        title: 'text-left text-xl font-medium'
-      }"
-    >
-      <p class="text-lg text-muted leading-relaxed max-w-3xl">
-        {{ project.description }}
-      </p>
-    </UPageSection>
+    <p class="text-lg text-muted leading-relaxed max-w-3xl text-right">
+      {{ project.description }}
+    </p>
 
     <!-- Additional Links -->
-    <ModelProjectsLinks
+    <!-- <ModelProjectsLinks
       :links="project.links"
       :main-url="project.url"
       :title="project.title"
-    />
+    /> -->
 
     <!-- Technologies -->
     <ModelProjectsTechnologies
@@ -109,8 +104,6 @@ const backPath = computed(() => {
     />
 
     <!-- Challenges & Experience -->
-    <ModelProjectsChallenges
-      :content="project.challenges?.content"
-    />
+    <ModelProjectsChallenges :content="challenges?.body" />
   </UPage>
 </template>

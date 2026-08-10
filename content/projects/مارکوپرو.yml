@@ -1,0 +1,50 @@
+title: سایت گردشگری مارکوپرو
+company: شاهان سفر پارس
+date: 2024-01-01
+description: توسعه و پیاده‌سازی فرانت‌اند سایت گردشگری مارکوپرو با تمرکز بر TypeScript، Nuxt UI، بهینه‌سازی عملکرد، معماری کش چندلایه و سئوی فنی.
+endDate: ""
+image: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+images:
+  - src: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+    alt: صفحه اصلی سایت مارکوپرو
+  - src: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+    alt: بخش نقشه پروژه با Leaflet
+  - src: https://1va8iocevz61batm.public.blob.vercel-storage.com/portfolio/marco/5555size.jpg
+    alt: بخش‌های کلیدی سایت مارکوپرو
+links:
+  - label: مشاهده سایت
+    to: https://demo.marcopro.co/
+    target: _blank
+    icon: i-lucide-external-link
+startDate: 2024-01-01
+tags:
+  - TypeScript
+  - Performance
+  - SEO
+  - Nuxt UI
+technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 4
+      - TypeScript
+      - Nuxt UI
+      - Pinia
+      - Tailwind CSS v4
+      - Leaflet
+  - category: performance
+    items:
+      - Nitro Server Caching
+      - Redis
+      - HTTP Cache-Control Headers
+      - Client-Side State Caching
+      - Bundle Size Optimization
+  - category: seo
+    items:
+      - nuxt-schema-org
+      - "@nuxtjs/sitemap"
+  - category: other
+    items:
+      - "@vite-pwa/nuxt"
+      - Maska
+      - Sharp
+url: https://demo.marcopro.co/

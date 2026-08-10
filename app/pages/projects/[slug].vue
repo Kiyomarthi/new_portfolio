@@ -8,8 +8,16 @@ const slug = computed(() => {
   return `/projects/${path}`
 })
 
+const projectName = computed(() => {
+  return slug.value.replace('/projects/', '')
+})
+
 const { data: project } = await useAsyncData(`project-${slug.value}`, () =>
   queryCollection('projects').path(slug.value).first()
+)
+
+const { data: challenges } = await useAsyncData(`challenges-${slug.value}`, () =>
+  queryCollection('projectChallenges').path(`/projects/${projectName.value}-challenges`).first()
 )
 
 if (!project.value) {
@@ -44,5 +52,8 @@ if (project.value.images?.[0]?.src) {
 </script>
 
 <template>
-  <ModelProjectsDetail :project />
+  <ModelProjectsDetail
+    :project
+    :challenges
+  />
 </template>

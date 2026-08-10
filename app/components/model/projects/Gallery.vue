@@ -1,28 +1,32 @@
 <script setup lang="ts">
 const props = defineProps<{
-  images: Array<{ src: string; alt: string }>;
-  url: string;
-}>();
+  images: Array<{ src: string, alt: string }>
+  url: string
+}>()
 
-const showModal = ref(false);
-const currentSlide = ref(0);
+const showModal = ref(false)
+const currentSlide = ref(0)
 
 const displayImages = computed(() => {
-  return props.images?.slice(0, 4) || [];
-});
+  return props.images?.slice(0, 4) || []
+})
 
 const additionalCount = computed(() => {
-  return Math.max(0, (props.images?.length || 0) - 4);
-});
+  return Math.max(0, (props.images?.length || 0) - 4)
+})
 
 function openModal(index: number = 0) {
-  currentSlide.value = index;
-  showModal.value = true;
+  currentSlide.value = index
+  showModal.value = true
 }
 </script>
 
 <template>
-  <nuxt-link :to="url" target="_blank" class="grid grid-cols-2 gap-2">
+  <nuxt-link
+    :to="url"
+    target="_blank"
+    class="grid grid-cols-2 gap-2"
+  >
     <!-- First image (main, larger) -->
     <div
       v-if="displayImages[0]"
@@ -39,7 +43,7 @@ function openModal(index: number = 0) {
         <span
           class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 text-white px-4 py-2 rounded-full text-sm"
         >
-          Go To Project
+          رفتن به پروژه
         </span>
       </div>
     </div>
