@@ -45,13 +45,20 @@ content/*.yml, content/blog/*.md, content/projects/*.yml
 
 ### Projects (`/projects`) — `pages/projects.vue`
 1. Fetches `pages` collection at path `/projects`: `queryCollection('pages').path('/projects').first()` (for hero metadata)
-2. Renders via `<ModelProjectsList>` component which fetches `queryCollection('projects').order('date', 'DESC').all()`
-3. Component handles all project rendering with Motion animations
+2. Renders via `<ModelProjectsList>` component which fetches `queryCollection('projects').all()`
+3. Component sorts projects explicitly by the `order` field (see ordering rule below)
+4. Component handles all project rendering with Motion animations
 
 ### Projects on Home (`/`) — `pages/index.vue`
 1. Uses `<ModelProjectsList :show-more="true" :initial-limit="3" />`
 2. Component fetches its own data from `projects` collection
-3. Initially shows 3 projects, "Show More Projects" button reveals all
+3. Same `order`-based sorting as `/projects`
+4. Initially shows 3 projects, "Show More Projects" button reveals all
+
+### Project Ordering
+- Projects with an `order` field sort first, ascending (`order: 1` before `order: 2`)
+- Projects without `order` sort after all ordered projects, by `date` DESC
+- Sorting is done explicitly in `model/projects/list.vue` — never relies on Nuxt Content's default order
 
 ### Blog Listing (`/blog`) — `pages/blog/index.vue`
 1. Fetches `pages` collection at path `/blog`: `queryCollection('pages').path('/blog').first()`

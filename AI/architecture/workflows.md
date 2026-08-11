@@ -52,7 +52,15 @@ No tests in the project. CI validates code quality only.
 ### New Project
 1. Create `content/projects/my-project.yml`
 2. Required fields: `title`, `description`, `image`, `url`, `tags`, `date`
-3. Appears on `/projects` listing automatically
+3. Optional `order` field controls display position (lower = higher). Projects without `order` sort after ordered ones, by date DESC.
+4. Optional long-form challenges: create `content/projects/my-project-challenges.md` — automatically connected to the project detail page via the `projectChallenges` collection
+5. Appears on `/projects` listing and home page automatically, sorted by `order`
+
+### Creating a Project from Nuxt Studio
+- Nuxt Studio natively supports creating a **single** document (YAML or Markdown) via the file tree's "New Document" action
+- Create the project YAML first (one document). It immediately appears in the list/detail pages
+- Optionally create the related `-challenges.md` as a second document
+- Studio does **not** create the paired YAML + Markdown in one action — this is a known Studio limitation, not a bug to work around with API routes (the project forbids server API routes)
 
 ### Updating Home Page
 1. Edit `content/index.yml`
