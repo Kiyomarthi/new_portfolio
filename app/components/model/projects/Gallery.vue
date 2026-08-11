@@ -1,30 +1,34 @@
 <script setup lang="ts">
 const props = defineProps<{
-  images: Array<{ src: string; alt: string }>;
-  url: string;
-}>();
+  images: Array<{ src: string, alt: string }>
+  url: string
+}>()
 
-const showModal = ref(false);
-const currentSlide = ref(0);
+const showModal = ref(false)
+const currentSlide = ref(0)
 
 const displayImages = computed(() => {
-  return props.images?.slice(0, 4) || [];
-});
+  return props.images?.slice(0, 4) || []
+})
 
 const additionalCount = computed(() => {
-  return Math.max(0, (props.images?.length || 0) - 4);
-});
+  return Math.max(0, (props.images?.length || 0) - 4)
+})
 
 function openModal(index: number = 0) {
-  currentSlide.value = index;
-  showModal.value = true;
+  currentSlide.value = index
+  showModal.value = true
 }
 
-const open = ref<boolean>(false);
+const open = ref<boolean>(false)
 </script>
 
 <template>
-  <div target="_blank" class="grid grid-cols-3 gap-2" @click="open = true">
+  <div
+    target="_blank"
+    class="grid grid-cols-3 gap-2"
+    @click="open = true"
+  >
     <!-- First image (main, larger) -->
     <div
       v-if="displayImages[0]"
@@ -111,8 +115,14 @@ const open = ref<boolean>(false);
       </div>
     </div> -->
 
-    <WidgetResponseModal v-model="open" fullscreen>
-      <div dir="ltr" class="w-full max-w-xl mx-auto">
+    <WidgetResponseModal
+      v-model="open"
+      fullscreen
+    >
+      <div
+        dir="ltr"
+        class="w-full max-w-xl mx-auto"
+      >
         <u-carousel
           v-slot="{ item, index }"
           loop

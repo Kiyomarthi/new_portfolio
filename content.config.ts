@@ -1,10 +1,10 @@
-import { defineCollection, defineContentConfig, z } from "@nuxt/content";
+import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 const createBaseSchema = () =>
   z.object({
     title: z.string(),
-    description: z.string(),
-  });
+    description: z.string()
+  })
 
 const createButtonSchema = () =>
   z.object({
@@ -12,20 +12,20 @@ const createButtonSchema = () =>
     icon: z.string().optional(),
     to: z.string().optional(),
     color: z
-      .enum(["primary", "neutral", "success", "warning", "error", "info"])
+      .enum(['primary', 'neutral', 'success', 'warning', 'error', 'info'])
       .optional(),
-    size: z.enum(["xs", "sm", "md", "lg", "xl"]).optional(),
+    size: z.enum(['xs', 'sm', 'md', 'lg', 'xl']).optional(),
     variant: z
-      .enum(["solid", "outline", "subtle", "soft", "ghost", "link"])
+      .enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
       .optional(),
-    target: z.enum(["_blank", "_self"]).optional(),
-  });
+    target: z.enum(['_blank', '_self']).optional()
+  })
 
 const createImageSchema = () =>
   z.object({
-    src: z.string().editor({ input: "media" }),
-    alt: z.string(),
-  });
+    src: z.string().editor({ input: 'media' }),
+    alt: z.string()
+  })
 
 const createAuthorSchema = () =>
   z.object({
@@ -34,24 +34,24 @@ const createAuthorSchema = () =>
     username: z.string().optional(),
     twitter: z.string().optional(),
     to: z.string().optional(),
-    avatar: createImageSchema().optional(),
-  });
+    avatar: createImageSchema().optional()
+  })
 
 const createTestimonialSchema = () =>
   z.object({
     quote: z.string(),
-    author: createAuthorSchema(),
-  });
+    author: createAuthorSchema()
+  })
 
 export default defineContentConfig({
   collections: {
     index: defineCollection({
-      type: "page",
-      source: "index.yml",
+      type: 'page',
+      source: 'index.yml',
       schema: z.object({
         hero: z.object({
           links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema()),
+          images: z.array(createImageSchema())
         }),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
@@ -62,11 +62,11 @@ export default defineContentConfig({
               company: z.object({
                 name: z.string(),
                 url: z.string(),
-                logo: z.string().editor({ input: "icon" }),
-                color: z.string(),
-              }),
-            }),
-          ),
+                logo: z.string().editor({ input: 'icon' }),
+                color: z.string()
+              })
+            })
+          )
         }),
         testimonials: z.array(createTestimonialSchema()),
         blog: createBaseSchema(),
@@ -77,21 +77,21 @@ export default defineContentConfig({
               questions: z.array(
                 z.object({
                   label: z.string().nonempty(),
-                  content: z.string().nonempty(),
-                }),
-              ),
-            }),
-          ),
-        }),
-      }),
+                  content: z.string().nonempty()
+                })
+              )
+            })
+          )
+        })
+      })
     }),
     projects: defineCollection({
-      type: "page",
-      source: "projects/*.yml",
+      type: 'page',
+      source: 'projects/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: "media" }),
+        image: z.string().nonempty().editor({ input: 'media' }),
         images: z.array(createImageSchema()).optional(),
         url: z.string().nonempty(),
         tags: z.array(z.string()),
@@ -99,66 +99,67 @@ export default defineContentConfig({
           .array(
             z.object({
               category: z.string().nonempty(),
-              items: z.array(z.string()),
-            }),
+              items: z.array(z.string())
+            })
           )
           .optional(),
         links: z.array(createButtonSchema()).optional(),
         company: z.string().optional(),
         startDate: z.date().optional(),
         endDate: z.date().optional(),
-        date: z.date(),
-      }),
+        date: z.date()
+      })
     }),
     projectChallenges: defineCollection({
-      type: "page",
-      source: "projects/*-challenges.md",
-      schema: z.object({}),
+      type: 'page',
+      source: 'projects/*-challenges.md',
+      schema: z.object({})
     }),
     blog: defineCollection({
-      type: "page",
-      source: "blog/*.md",
+      type: 'page',
+      source: 'blog/*.md',
       schema: z.object({
         minRead: z.number(),
         date: z.date(),
-        image: z.string().nonempty().editor({ input: "media" }),
-        author: createAuthorSchema(),
-      }),
+        image: z.string().nonempty().editor({ input: 'media' }),
+        author: createAuthorSchema()
+      })
     }),
     pages: defineCollection({
-      type: "page",
-      source: [{ include: "projects.yml" }, { include: "blog.yml" }],
+      type: 'page',
+      source: [{ include: 'projects.yml' }, { include: 'blog.yml' }],
       schema: z.object({
-        links: z.array(createButtonSchema()),
-      }),
+        links: z.array(createButtonSchema())
+      })
     }),
-    speaking: defineCollection({
-      type: "page",
-      source: "speaking.yml",
+    contact: defineCollection({
+      type: 'page',
+      source: 'contact.yml',
       schema: z.object({
-        links: z.array(createButtonSchema()),
-        events: z.array(
-          z.object({
-            category: z.enum(["Live talk", "Podcast", "Conference"]),
-            title: z.string(),
-            date: z.date(),
-            location: z.string(),
-            url: z.string().optional(),
-          }),
-        ),
-      }),
+        contact: z.object({
+          title: z.string().nonempty(),
+          items: z.array(
+            z.object({
+              title: z.string().nonempty(),
+              icon: z.string().nonempty().editor({ input: 'icon' }),
+              color: z.string(),
+              url: z.string().nonempty()
+            })
+          )
+        })
+      })
     }),
     about: defineCollection({
-      type: "page",
-      source: "about.yml",
+      type: 'page',
+      source: 'about.yml',
       schema: z.object({
         content: z.object({}),
-        images: z.array(createImageSchema()),
-      }),
+        images: z.array(createImageSchema())
+      })
     }),
     skills: defineCollection({
-      type: "page",
-      source: "skills.yml",
+      type: 'page',
+      source: 'skills.yml',
       schema: z.object({
         categories: z.array(
           z.object({
@@ -169,13 +170,13 @@ export default defineContentConfig({
               z.object({
                 name: z.string().nonempty(),
                 level: z
-                  .enum(["Expert", "Advanced", "Intermediate", "Beginner"])
-                  .optional(),
-              }),
-            ),
-          }),
-        ),
-      }),
-    }),
-  },
-});
+                  .enum(['Expert', 'Advanced', 'Intermediate', 'Beginner'])
+                  .optional()
+              })
+            )
+          })
+        )
+      })
+    })
+  }
+})

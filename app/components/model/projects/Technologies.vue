@@ -1,34 +1,34 @@
 <script setup lang="ts">
 type TechnologyCategory = {
-  category: string;
-  items: string[];
-};
+  category: string
+  items: string[]
+}
 
 const props = defineProps<{
-  technologies?: TechnologyCategory[];
-  tags?: string[];
-}>();
+  technologies?: TechnologyCategory[]
+  tags?: string[]
+}>()
 
 const isGrouped = computed(() => {
-  return Array.isArray(props.technologies) && props.technologies.length > 0;
-});
+  return Array.isArray(props.technologies) && props.technologies.length > 0
+})
 
 const flatList = computed(() => {
-  if (!isGrouped.value) return [];
-  return (props.technologies as TechnologyCategory[]).flatMap((g) => g.items);
-});
+  if (!isGrouped.value) return []
+  return (props.technologies as TechnologyCategory[]).flatMap(g => g.items)
+})
 
 const allTags = computed(() => {
-  return [...(props.tags || []), ...flatList.value];
-});
+  return [...(props.tags || []), ...flatList.value]
+})
 
 const groups = computed(() => {
-  if (!isGrouped.value) return [];
-  return (props.technologies as TechnologyCategory[]).map((g) => ({
+  if (!isGrouped.value) return []
+  return (props.technologies as TechnologyCategory[]).map(g => ({
     name: g.category.charAt(0).toUpperCase() + g.category.slice(1),
-    items: g.items,
-  }));
-});
+    items: g.items
+  }))
+})
 </script>
 
 <template>
@@ -36,13 +36,19 @@ const groups = computed(() => {
     title="فناوری‌ها"
     :ui="{
       title: 'text-right text-h2 font-medium',
-      container: 'gap-5! py-12! pr-0!',
+      container: 'gap-5! py-12! pr-0!'
     }"
     dir="ltr"
   >
     <!-- Grouped technologies -->
-    <div v-if="isGrouped" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div v-for="group in groups" :key="group.name">
+    <div
+      v-if="isGrouped"
+      class="grid grid-cols-1 md:grid-cols-2 gap-6"
+    >
+      <div
+        v-for="group in groups"
+        :key="group.name"
+      >
         <h4 class="text-h3 font-semibold text-highlighted mb-3">
           {{ group.name }}
         </h4>
@@ -60,7 +66,10 @@ const groups = computed(() => {
     </div>
 
     <!-- Flat/ungrouped technologies -->
-    <div v-else-if="allTags.length > 0" class="flex flex-wrap gap-2">
+    <div
+      v-else-if="allTags.length > 0"
+      class="flex flex-wrap gap-2"
+    >
       <UBadge
         v-for="tech in allTags"
         :key="tech"
@@ -70,6 +79,11 @@ const groups = computed(() => {
       />
     </div>
 
-    <p v-else class="text-muted text-sm">فناوری‌ها مشخص نشده‌اند.</p>
+    <p
+      v-else
+      class="text-muted text-sm"
+    >
+      فناوری‌ها مشخص نشده‌اند.
+    </p>
   </UPageSection>
 </template>

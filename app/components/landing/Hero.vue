@@ -13,7 +13,8 @@ defineProps<{
     :ui="{
       headline: 'flex items-center justify-center',
       title: 'text-shadow-md max-w-lg mx-auto',
-      links: 'mt-4 flex-col justify-center items-center'
+      links: 'mt-4 flex-col justify-center items-center',
+      container: 'pb-10!'
     }"
   >
     <template #headline>
@@ -59,7 +60,10 @@ defineProps<{
           delay: 0.1
         }"
       >
-        <p class="whitespace-pre-line leading-[55px]">
+        <p
+          dir="ltr"
+          class="whitespace-pre-line leading-13.75 font-[grok]"
+        >
           {{ page.title }}
         </p>
       </Motion>
@@ -82,9 +86,9 @@ defineProps<{
           delay: 0.3
         }"
       >
-        <p class="whitespace-pre-line text-left whitespace-nowrap">
+        <!-- <p class="whitespace-pre-line text-right whitespace-nowrap">
           {{ page.description }}
-        </p>
+        </p> -->
       </Motion>
     </template>
 
@@ -117,8 +121,8 @@ defineProps<{
             :to="global.available ? global.meetingLink : ''"
             :label="
               global.available
-                ? 'Available for new projects'
-                : 'Not available at the moment'
+                ? 'آماده همکاری برای پروژه‌های جدید'
+                : 'در حال حاضر مشغولم'
             "
             target="_blank"
           >

@@ -1,10 +1,10 @@
-export function useHashForModal(hash: string = "modal") {
-  const router = useRouter();
-  const route = useRoute();
+export function useHashForModal(hash: string = 'modal') {
+  const router = useRouter()
+  const route = useRoute()
 
   const modal = computed<boolean>({
     get() {
-      return route.hash === `#${hash}`;
+      return route.hash === `#${hash}`
     },
     set(value) {
       if (value) {
@@ -12,22 +12,22 @@ export function useHashForModal(hash: string = "modal") {
           router.push({
             path: route.path,
             query: route.query,
-            hash: `#${hash}`,
-          });
+            hash: `#${hash}`
+          })
         }
       } else {
         if (route.hash === `#${hash}`) {
           router.replace({
             path: route.path,
             query: route.query,
-            hash: "",
-          });
+            hash: ''
+          })
         }
       }
-    },
-  });
+    }
+  })
 
   return {
-    modal,
-  };
+    modal
+  }
 }

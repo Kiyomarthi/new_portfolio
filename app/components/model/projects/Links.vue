@@ -26,7 +26,6 @@ const projectLinks = computed(() => {
       <UButton
         v-if="mainUrl"
         :to="mainUrl"
-        target="_blank"
         rel="noopener noreferrer"
         :label="title ? `بازدید از ${title}` : 'بازدید از پروژه'"
         icon="i-lucide-external-link"

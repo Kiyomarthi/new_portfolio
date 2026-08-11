@@ -24,15 +24,14 @@ useSeoMeta({
     <LandingHero :page />
     <UPageSection
       :ui="{
-        container: 'pt-0! lg:grid lg:grid-cols-2 lg:gap-8'
+        container: 'pt-0! block lg:blcok lg:blcok lg:gap-10! gap-10! pb-10!'
       }"
     >
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
-    <LandingBlog :page />
-    <LandingTestimonials :page />
-    <LandingFAQ :page />
+    <!-- <LandingBlog :page /> -->
+    <!-- <LandingTestimonials :page /> -->
     <ModelSkills
       :show-more="true"
       :initial-limit="6"
@@ -41,5 +40,6 @@ useSeoMeta({
       :show-more="true"
       :initial-limit="3"
     />
+    <LandingFAQ :page />
   </UPage>
 </template>

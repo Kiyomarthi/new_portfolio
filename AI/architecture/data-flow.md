@@ -27,7 +27,7 @@ content/*.yml, content/blog/*.md, content/projects/*.yml
 | `projects` | data | `projects/*.yml` | Project cards (title, description, image, url, tags, date) |
 | `blog` | page | `blog/*.md` | Blog posts (Markdown body + front matter) |
 | `pages` | page | `projects.yml`, `blog.yml` | Listing page metadata |
-| `speaking` | page | `speaking.yml` | Speaking events grouped by category |
+| `contact` | page | `contact.yml` | Contact page: array of contact methods (title, icon, color, url) |
 | `skills` | page | `skills.yml` | Skills & technologies grouped by category |
 
 ## Per-Page Data Fetching
@@ -64,10 +64,10 @@ content/*.yml, content/blog/*.md, content/projects/*.yml
 3. Renders body via `<ContentRenderer>` (Nuxt Content's Markdown renderer)
 4. "Copy link" button uses `copyToClipboard()` utility
 
-### Speaking (`/speaking`) — `pages/speaking.vue`
-1. Fetches `speaking` collection: `queryCollection('speaking').first()`
-2. Groups events by category (Conference, Live talk, Podcast) via computed property
-3. Renders 3-column grid on desktop, stacked on mobile
+### Contact (`/contact`) — `pages/contact.vue`
+1. Fetches `contact` collection: `queryCollection('contact').first()`
+2. Renders via `<ModelContactContact>` component which iterates over `contact.items`
+3. Each item renders as a clickable card with icon, color, and URL (tel: or external link)
 
 ### Skills (`/skills`) — `pages/skills.vue`
 1. Fetches `skills` collection: `queryCollection('skills').first()`

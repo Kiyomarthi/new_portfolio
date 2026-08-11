@@ -39,6 +39,18 @@ export default defineAppConfig({
         target: "_blank",
         "aria-label": "aboly on GitHub",
       },
+      {
+        icon: "i-simple-icons-linkedin",
+        to: "https://www.linkedin.com/in/kiyomarthi",
+        target: "_blank",
+        "aria-label": "aboly on linkedin",
+      },
+      {
+        icon: "i-lucide-phone",
+        to: "tel:+989154148240",
+        target: "_blank",
+        "aria-label": "call me",
+      },
     ],
   },
 });

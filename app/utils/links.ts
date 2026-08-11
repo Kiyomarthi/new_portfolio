@@ -16,15 +16,15 @@ export const navLinks: NavigationMenuItem[] = [
     icon: 'i-lucide-folder',
     to: '/projects'
   },
+  // {
+  //   label: 'درباره‌من',
+  //   icon: 'i-lucide-user',
+  //   to: '/about'
+  // },
   {
-    label: 'درباره‌من',
-    icon: 'i-lucide-user',
-    to: '/about'
-  },
-  {
-    label: 'راه‌ارتباطی',
-    icon: 'i-lucide-mic',
-    to: '/speaking'
+    label: 'ارتباط با من',
+    icon: 'i-lucide-phone',
+    to: '/contact'
   }
   // {
   //   label: "مقالات",

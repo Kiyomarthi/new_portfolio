@@ -27,7 +27,7 @@ defineOgImage('Portfolio', { title, description })
 
 <template>
   <UPage v-if="page">
-    <UPageHero
+    <!-- <UPageHero
       :title="page.title"
       :description="page.description"
       :links="page.links"
@@ -53,7 +53,7 @@ defineOgImage('Portfolio', { title, description })
           />
         </div>
       </template>
-    </UPageHero>
-    <ModelProjectsList />
+    </UPageHero> -->
+    <ModelProjectsList class="pt-12" />
   </UPage>
 </template>

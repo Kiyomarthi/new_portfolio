@@ -1,0 +1,33 @@
+title: ارتباط با من
+contact:
+  title: راه‌های ارتباطی
+  items:
+    - title: شماره تماس
+      icon: i-lucide-phone
+      color: "#22c55e"
+      url: tel:+989154148240
+    - title: GitHub
+      icon: i-simple-icons-github
+      color: "#181717"
+      url: https://github.com/Kiyomarthi
+    - title: LinkedIn
+      icon: i-simple-icons-linkedin
+      color: "#0A66C2"
+      url: https://www.linkedin.com/in/kiyomarthi
+    - title: Telegram
+      icon: i-simple-icons-telegram
+      color: "#229ED9"
+      url: t.me/Abolydev
+    - title: gmail
+      icon: i-simple-icons-gmail
+      color: "#fd030f"
+      url: https://mail.google.com/mail/?view=cm&fs=1&to=a.kiyomarthi@gmail.com
+    - title: cal.com
+      icon: i-lucide-book
+      color: "#000"
+      url: https://cal.com/abolfazl-kiyomarthi-efdhwm/طراحی-سایت
+    - title: WhatsApp
+      icon: i-simple-icons-whatsapp
+      color: "#25D366"
+      url: https://wa.me/989154148240
+description: راه‌های ارتباط با من را انتخاب کنید.

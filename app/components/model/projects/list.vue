@@ -8,27 +8,28 @@ const { data: projects } = await useAsyncData('projects-list', () =>
   queryCollection('projects').order('date', 'DESC').all()
 )
 if (!projects.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Projects not found', fatal: true })
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Projects not found',
+    fatal: true
+  })
 }
 
 const visibleProjects = computed(() => {
   const all = projects.value || []
-  if (!props.showMore || !props.initialLimit)
-    return all
+  if (!props.showMore || !props.initialLimit) return all
   return all.slice(0, props.initialLimit)
 })
 
 const hasMore = computed(() => {
-  if (!props.showMore || !props.initialLimit)
-    return false
+  if (!props.showMore || !props.initialLimit) return false
   return (projects.value?.length || 0) > props.initialLimit
 })
 
 const showAll = ref(false)
 
 const displayedProjects = computed(() => {
-  if (!props.showMore || showAll.value)
-    return projects.value || []
+  if (!props.showMore || showAll.value) return projects.value || []
   return visibleProjects.value
 })
 
@@ -42,7 +43,7 @@ function handleShowMore() {
     title="پروژه‌ها"
     description="گزیده‌ای از پروژه‌هایی که روی آن‌ها کار کرده‌ام."
     :ui="{
-      container: 'pt-0!',
+      container: 'pt-0! gap-4!',
       title: 'text-right text-xl sm:text-xl lg:text-2xl font-medium',
       description: 'text-right mt-2 text-sm sm:text-md lg:text-sm text-muted'
     }"
@@ -61,7 +62,11 @@ function handleShowMore() {
             body: 'p-0 sm:p-0'
           }"
           class="overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-lg cursor-pointer"
-          @click="$router.push(`/projects/${project.path?.replace('/projects/', '') || project.title.toLowerCase().replace(/\s+/g, '-')}`)"
+          @click="
+            $router.push(
+              `/projects/${project.path?.replace('/projects/', '') || project.title.toLowerCase().replace(/\s+/g, '-')}`
+            )
+          "
         >
           <div class="flex flex-col md:flex-row">
             <!-- Project Image -->
@@ -111,8 +116,7 @@ function handleShowMore() {
               <!-- Visit -->
               <div class="mt-auto pt-6">
                 <UButton
-                  :to="project.url"
-                  target="_blank"
+                  :to="`/projects/${project.path?.replace('/projects/', '') || project.title.toLowerCase().replace(/\s+/g, '-')}`"
                   rel="noopener noreferrer"
                   label="بازدید از پروژه"
                   icon="i-lucide-arrow-up-right"
@@ -128,7 +132,7 @@ function handleShowMore() {
 
     <div
       v-if="hasMore && !showAll"
-      class="flex justify-center mt-8"
+      class="flex justify-center mt-3"
     >
       <UButton
         label="نمایش پروژه‌های بیشتر"

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ProjectsCollectionItem } from '@nuxt/content'
 
-const props = defineProps<{
+defineProps<{
   project: ProjectsCollectionItem | null | undefined
   challenges?: ProjectsCollectionItem | null
 }>()
@@ -68,7 +68,6 @@ const backPath = computed(() => {
       >
         <UButton
           :to="project.url"
-          target="_blank"
           rel="noopener noreferrer"
           label="بازدید از پروژه"
           icon="i-lucide-external-link"

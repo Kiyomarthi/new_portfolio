@@ -8,19 +8,21 @@ const { data: skillsPage } = await useAsyncData('skills-component', () =>
   queryCollection('skills').first()
 )
 if (!skillsPage.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Skills not found', fatal: true })
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Skills not found',
+    fatal: true
+  })
 }
 
 const visibleCategories = computed(() => {
   const categories = skillsPage.value?.categories || []
-  if (!props.showMore || !props.initialLimit)
-    return categories
+  if (!props.showMore || !props.initialLimit) return categories
   return categories.slice(0, props.initialLimit)
 })
 
 const hasMore = computed(() => {
-  if (!props.showMore || !props.initialLimit)
-    return false
+  if (!props.showMore || !props.initialLimit) return false
   return (skillsPage.value?.categories?.length || 0) > props.initialLimit
 })
 
@@ -39,10 +41,12 @@ function handleShowMore() {
 
 <template>
   <UPageSection
-    title="Skills & Technologies"
-    description="Technologies and tools I work with."
+    title="مهارت‌ها"
+    description="مهارت ها و تکنولوژی‌ها."
     :ui="{
-      container: 'pt-0!'
+      container: 'pt-0! gap-4!',
+      title: 'text-right text-xl sm:text-xl lg:text-2xl font-medium',
+      description: 'text-right mt-2 text-sm sm:text-md lg:text-sm text-muted'
     }"
   >
     <UPageGrid
@@ -100,7 +104,7 @@ function handleShowMore() {
             <div class="flex items-center justify-between">
               <span class="text-xs text-dimmed">
                 {{ category.skills.length }}
-                {{ category.skills.length === 1 ? 'skill' : 'skills' }}
+                {{ category.skills.length === 1 ? "skill" : "skills" }}
               </span>
 
               <UIcon
@@ -115,10 +119,10 @@ function handleShowMore() {
 
     <div
       v-if="hasMore && !showAll"
-      class="flex justify-center mt-8"
+      class="flex justify-center mt-3"
     >
       <UButton
-        label="Show More Skills"
+        label="نمایش مهارت‌های بیشتر"
         color="neutral"
         variant="outline"
         trailing-icon="i-lucide-chevron-down"

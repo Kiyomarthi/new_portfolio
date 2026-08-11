@@ -1,74 +1,74 @@
 <script setup lang="ts">
-import { useModalWithHistory } from "~/composables/utils/useModalHistory";
-import { useBreakpoints } from "~/composables/utils/useBreakpoints";
+import { useModalWithHistory } from '~/composables/utils/useModalHistory'
+import { useBreakpoints } from '~/composables/utils/useBreakpoints'
 
-///// props/emits /////
+/// // props/emits /////
 const open = defineModel<boolean>({
-  default: false,
-});
+  default: false
+})
 
 const props = withDefaults(
   defineProps<{
-    title?: string;
-    subtitle?: string;
-    headerClass?: string;
-    noClose?: boolean;
-    contentClass?: string;
-    mobileContentClass?: string;
-    fullscreen?: boolean;
+    title?: string
+    subtitle?: string
+    headerClass?: string
+    noClose?: boolean
+    contentClass?: string
+    mobileContentClass?: string
+    fullscreen?: boolean
 
     /**
      * Mobile presentation mode
      * false => USlideover
      * true => UDrawer
      */
-    drawer?: boolean;
+    drawer?: boolean
 
     /**
      * Drawer props
      */
-    drawerDirection?: "top" | "right" | "bottom" | "left";
-    drawerInset?: boolean;
-    drawerHandle?: boolean;
-    drawerHandleOnly?: boolean;
-    drawerOverlay?: boolean;
-    drawerModal?: boolean;
+    drawerDirection?: 'top' | 'right' | 'bottom' | 'left'
+    drawerInset?: boolean
+    drawerHandle?: boolean
+    drawerHandleOnly?: boolean
+    drawerOverlay?: boolean
+    drawerModal?: boolean
   }>(),
   {
     drawer: false,
 
-    drawerDirection: "bottom",
+    drawerDirection: 'bottom',
     drawerInset: false,
     drawerHandle: true,
     drawerHandleOnly: false,
     drawerOverlay: true,
-    drawerModal: true,
-  },
-);
+    drawerModal: true
+  }
+)
 
-///// composables/stores /////
-const { lgAndUp } = useBreakpoints();
-useModalWithHistory(open);
+/// // composables/stores /////
+const { lgAndUp } = useBreakpoints()
+useModalWithHistory(open)
 
-///// computed /////
+/// // computed /////
 const contentMergedClass = computed(() => {
-  const base = `${!props.fullscreen ? "w-112.5" : ""} max-w-none p-4`;
+  const base = `${!props.fullscreen ? 'w-112.5' : ''} max-w-none p-4`
 
-  return props.contentClass ? `${base} ${props.contentClass}` : base;
-});
+  return props.contentClass ? `${base} ${props.contentClass}` : base
+})
 
 const mobileContentMergedClass = computed(() => {
-  const base = "rounded-t-[10px]";
+  const base = 'rounded-t-[10px]'
 
   return props.mobileContentClass
     ? `${base} ${props.mobileContentClass}`
-    : base;
-});
+    : base
+})
 
-///// functions /////
+/// // functions /////
 const close = () => {
-  open.value = false;
-};
+  open.value = false
+}
 </script>
 
 <template>
@@ -83,7 +83,7 @@ const close = () => {
     :ui="{
       content: contentMergedClass,
       overlay: 'bg-black/35 backdrop-blur-xs',
-      header: ['p-4 min-h-max', headerClass],
+      header: ['p-4 min-h-max', headerClass]
     }"
     :fullscreen
   >
@@ -97,7 +97,10 @@ const close = () => {
       <slot />
     </template>
 
-    <template v-if="$slots.footer" #footer>
+    <template
+      v-if="$slots.footer"
+      #footer
+    >
       <slot name="footer" />
     </template>
   </u-modal>
@@ -113,7 +116,7 @@ const close = () => {
     :description="subtitle"
     :ui="{
       overlay: 'bg-black/35 backdrop-blur-xs',
-      content: mobileContentMergedClass,
+      content: mobileContentMergedClass
     }"
   >
     <template #title>
@@ -126,7 +129,10 @@ const close = () => {
       <slot />
     </template>
 
-    <template v-if="$slots.footer" #footer>
+    <template
+      v-if="$slots.footer"
+      #footer
+    >
       <slot name="footer" />
     </template>
   </u-slideover>
@@ -148,7 +154,7 @@ const close = () => {
     :modal="drawerModal"
     :ui="{
       overlay: 'bg-black/35 backdrop-blur-xs',
-      content: mobileContentMergedClass,
+      content: mobileContentMergedClass
     }"
   >
     <template #content>
@@ -159,11 +165,17 @@ const close = () => {
         <div class="flex items-center justify-between gap-3 w-full pb-2">
           <div class="min-w-0 flex-1">
             <slot name="title">
-              <div v-if="title" class="font-semibold">
+              <div
+                v-if="title"
+                class="font-semibold"
+              >
                 {{ title }}
               </div>
 
-              <div v-if="subtitle" class="text-muted text-sm mt-1">
+              <div
+                v-if="subtitle"
+                class="text-muted text-sm mt-1"
+              >
                 {{ subtitle }}
               </div>
             </slot>

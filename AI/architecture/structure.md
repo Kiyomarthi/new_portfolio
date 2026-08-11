@@ -33,7 +33,7 @@ portfolio/
 │   │   ├── index.vue             # Home — renders all landing sections
 │   │   ├── about.vue             # About page with MDC content + polaroid images
 │   │   ├── projects.vue          # Projects listing page
-│   │   ├── speaking.vue          # Speaking events grouped by category
+│   │   ├── contact.vue           # Contact page (phone, GitHub, LinkedIn, Telegram)
 │   │   └── blog/
 │   │       ├── index.vue         # Blog listing (all posts, descending date)
 │   │       └── [...slug].vue     # Dynamic blog post page (catch-all route)
@@ -45,7 +45,7 @@ portfolio/
 │   ├── about.yml                 # About page: content (MD), images
 │   ├── projects.yml              # Projects listing page metadata
 │   ├── blog.yml                  # Blog listing page metadata
-│   ├── speaking.yml              # Speaking page: events list
+│   ├── contact.yml               # Contact page: contact methods array
 │   ├── blog/                     # Blog posts as Markdown
 │   │   └── *.md                  # Individual blog posts (front matter + body)
 │   └── projects/                 # Project cards as YAML
