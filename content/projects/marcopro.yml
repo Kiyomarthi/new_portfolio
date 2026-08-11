@@ -1,9 +1,9 @@
 title: سایت گردشگری مارکوپرو
 company: شاهان سفر پارس
-date: 2024-01-01
+date: 2025-11-01
 description: توسعه و پیاده‌سازی فرانت‌اند یک وب‌سایت گردشگری و رزرو آنلاین برای خرید بلیط هواپیما، رزرو هتل و تورهای گردشگری، با تمرکز بر TypeScript، Nuxt UI، بهینه‌سازی عملکرد، معماری کش چندلایه و سئوی فنی.
 
-endDate: 2024-08-31
+endDate: 2026-06-21
 image: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/marcopro/demo.marcopro.co_.png
 images:
   - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/marcopro/demo.marcopro.co_.png
@@ -47,7 +47,7 @@ links:
     to: https://demo.marcopro.co/
     target: _blank
     icon: i-lucide-external-link
-startDate: 2024-03-01
+startDate: 2025-10-27
 tags:
   - TypeScript
   - Performance
@@ -71,4 +71,4 @@ technologies:
       - "pwa"
       - Leaflet
 
-url: https://demo.marcopro.co/
+url: https://demo.marcopro.co

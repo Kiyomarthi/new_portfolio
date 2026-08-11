@@ -126,7 +126,7 @@ const open = ref<boolean>(false);
           :items="images"
           class="w-full"
         >
-          <div class="w-[75dvw] h-[80dvh] flex items-center justify-center">
+          <div class="w-full h-[80dvh] flex items-center justify-center">
             <nuxt-img
               :src="item?.src"
               :alt="item?.alt || `تصویر ${index + 1}`"
