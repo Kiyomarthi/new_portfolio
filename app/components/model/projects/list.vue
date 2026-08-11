@@ -13,11 +13,11 @@ const { data: projects } = await useAsyncData('projects-list', () =>
 const sortedProjects = computed(() => {
   const all = [...(projects.value || [])]
   return all.sort((a, b) => {
-    const hasA = typeof a.order === 'number'
-    const hasB = typeof b.order === 'number'
-    if (hasA && hasB) return a.order - b.order
-    if (hasA && !hasB) return -1
-    if (!hasA && hasB) return 1
+    const orderA = a.order ?? Number.MAX_SAFE_INTEGER
+    const orderB = b.order ?? Number.MAX_SAFE_INTEGER
+    // Projects without `order` keep MAX_SAFE_INTEGER so they sort after ordered ones,
+    // then fall back to date DESC among themselves.
+    if (orderA !== orderB) return orderA - orderB
     return new Date(b.date).getTime() - new Date(a.date).getTime()
   })
 })

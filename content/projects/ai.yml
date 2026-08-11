@@ -1,0 +1,76 @@
+title: AI Chat — سیستم چت مبتنی بر هوش مصنوعی
+company: ""
+date: 2026-04-21
+description: فورک و توسعه یک پروژه چت مبتنی بر هوش مصنوعی با هدف آشنایی عملی با معماری AI Chat، استریم پاسخ‌ها، مدیریت مکالمات، تعامل زنده با رابط کاربری و پروتکل MCP برای فراهم کردن امکان تعامل AI Agentها با وب‌سایت.
+endDate: 2026-06-21
+
+image: ""
+
+images:
+  - src: ""
+    alt: رابط کاربری سیستم AI Chat
+  - src: ""
+    alt: نمایش استریم زنده پاسخ هوش مصنوعی
+  - src: ""
+    alt: رابط مدیریت و نمایش مکالمات
+  - src: ""
+    alt: تعامل AI Agent با وب‌سایت
+
+startDate: 2026-04-21
+
+tags:
+  - AI Chat
+  - AI Agent
+  - MCP
+  - Streaming
+  - Nuxt
+  - TypeScript
+  - Generative AI
+
+technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 4
+      - Vue.js
+      - TypeScript
+      - Nuxt UI
+      - Tailwind CSS v4
+      - VueUse
+  - category: ai
+    items:
+      - Vercel AI SDK
+      - OpenAI
+      - Anthropic
+      - Google AI
+      - AI Streaming
+      - AI Agent
+  - category: backend
+    items:
+      - Nuxt Server
+      - Nitro
+      - AI SDK
+      - MCP
+  - category: database
+    items:
+      - Drizzle ORM
+      - LibSQL
+      - NuxtHub
+  - category: security
+    items:
+      - Zod
+      - Nuxt Auth Utils
+      - Nuxt CSRF
+  - category: ui-and-content
+    items:
+      - Nuxt UI
+      - Shiki
+      - Comark
+      - Motion V
+
+url: "/"
+
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
