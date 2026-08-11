@@ -1,15 +1,18 @@
 <script setup lang="ts">
-import type { ProjectsCollectionItem, ProjectChallengesCollectionItem } from '@nuxt/content'
+import type {
+  ProjectsCollectionItem,
+  ProjectChallengesCollectionItem,
+} from "@nuxt/content";
 
 defineProps<{
-  project: ProjectsCollectionItem | null | undefined
-  challenges?: ProjectChallengesCollectionItem | null
-}>()
+  project: ProjectsCollectionItem | null | undefined;
+  challenges?: ProjectChallengesCollectionItem | null;
+}>();
 
-const route = useRoute()
+const route = useRoute();
 const backPath = computed(() => {
-  return route.query.from ? String(route.query.from) : '/projects'
-})
+  return route.query.from ? String(route.query.from) : "/projects";
+});
 </script>
 
 <template>
@@ -20,10 +23,7 @@ const backPath = computed(() => {
         :to="backPath"
         class="text-sm text-muted hover:text-highlighted transition-colors flex items-center gap-2"
       >
-        <UIcon
-          name="i-lucide-arrow-right"
-          class="size-4"
-        />
+        <UIcon name="i-lucide-arrow-right" class="size-4" />
         بازگشت به پروژه‌ها
       </ULink>
     </div>
@@ -54,18 +54,12 @@ const backPath = computed(() => {
           />
         </h1>
       </NuxtLink>
-      <h1
-        v-else
-        class="text-4xl font-semibold text-highlighted"
-      >
+      <h1 v-else class="text-4xl font-semibold text-highlighted">
         {{ project.title }}
       </h1>
 
       <!-- Project URL as separate link -->
-      <div
-        v-if="project.url"
-        class="mt-4"
-      >
+      <div v-if="project.url" class="mt-4">
         <UButton
           :to="project.url"
           rel="noopener noreferrer"
@@ -73,6 +67,7 @@ const backPath = computed(() => {
           icon="i-lucide-external-link"
           color="primary"
           variant="solid"
+          target="_blank"
         />
       </div>
     </div>
