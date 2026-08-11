@@ -1,24 +1,23 @@
 <script setup lang="ts">
+import type { ProjectChallengesCollectionItem } from '@nuxt/content'
+
 defineProps<{
-  content?: string
+  challenge?: ProjectChallengesCollectionItem | null
 }>()
 </script>
 
 <template>
   <div
-    v-if="content"
+    v-if="challenge?.body"
     title="چالش‌ها و تجربیات"
     :ui="{
       container: 'gap-5! py-12! pr-0!',
       title: 'text-right text-h2 font-medium'
     }"
   >
-    <!-- <MDC
-      :value="content"
-      unwrap="p"
-      class="prose prose-neutral dark:prose-invert max-w-none"
-    /> -->
-
-    <ContentRenderer :value="content" />
+    <ContentRenderer
+      v-if="challenge.body"
+      :value="challenge"
+    />
   </div>
 </template>

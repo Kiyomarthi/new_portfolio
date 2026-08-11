@@ -1,0 +1,93 @@
+title: زبانجو — پلتفرم جستجو و رزرو کلاس زبان
+company: ""
+date: 2026-03-21
+description: توسعه یک پلتفرم Full-Stack برای جستجو، مقایسه و ثبت‌نام در کلاس‌های زبان، شامل پنل کاربری، پنل مدیریت آموزشگاه و پنل مدیریت سیستم، با تمرکز بر تجربه کاربری، معماری قابل توسعه و مدیریت کامل فرانت‌اند و بک‌اند.
+endDate: 2026-08-11
+
+image: ""
+
+images:
+  - src: ""
+    alt: صفحه اصلی پلتفرم زبانجو
+  - src: ""
+    alt: جستجو و نمایش کلاس‌های زبان
+  - src: ""
+    alt: پنل کاربری
+  - src: ""
+    alt: پنل مدیریت آموزشگاه
+  - src: ""
+    alt: پنل مدیریت سیستم
+
+startDate: 2026-03-21
+
+tags:
+  - Full-Stack
+  - Education
+  - Language Learning
+  - Nuxt.js
+  - TypeScript
+  - Prisma
+  - MySQL
+  - PWA
+
+technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 4
+      - Vue.js 3
+      - TypeScript
+      - Nuxt UI
+      - Tailwind CSS v4
+      - Pinia
+      - VueUse
+  - category: backend
+    items:
+      - Nitro
+      - Node.js
+      - Prisma
+      - REST API
+      - JWT
+      - bcrypt
+      - Zod
+  - category: database
+    items:
+      - MySQL
+      - MariaDB
+      - Prisma ORM
+      - Database Modeling
+      - Migrations
+      - Seed
+  - category: maps
+    items:
+      - MapLibre GL
+      - OpenLayers
+      - Neshan Maps
+  - category: content
+    items:
+      - Nuxt Content
+      - MDC
+      - TipTap
+  - category: seo
+    items:
+      - Nuxt SEO
+      - Nuxt OG Image
+      - Nuxt Schema.org
+      - Nuxt LLMS
+  - category: pwa
+    items:
+      - Vite PWA
+      - Service Worker
+      - Progressive Web App
+  - category: media
+    items:
+      - Sharp
+      - Lottie
+
+url: https://zaban-jo.lovable.app
+
+links:
+  - label: مشاهده نسخه دمو
+    to: https://zaban-jo.lovable.app
+    target: _blank
+    icon: i-lucide-external-link
+

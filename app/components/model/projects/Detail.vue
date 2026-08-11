@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { ProjectsCollectionItem } from '@nuxt/content'
+import type { ProjectsCollectionItem, ProjectChallengesCollectionItem } from '@nuxt/content'
 
 defineProps<{
   project: ProjectsCollectionItem | null | undefined
-  challenges?: ProjectsCollectionItem | null
+  challenges?: ProjectChallengesCollectionItem | null
 }>()
 
 const route = useRoute()
