@@ -103,6 +103,6 @@ const backPath = computed(() => {
     />
 
     <!-- Challenges & Experience -->
-    <ModelProjectsChallenges :content="challenges?.body" />
+    <ModelProjectsChallenges :challenge="challenges" />
   </UPage>
 </template>

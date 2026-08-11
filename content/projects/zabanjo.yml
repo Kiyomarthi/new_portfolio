@@ -2,23 +2,66 @@ title: زبانجو — پلتفرم جستجو و رزرو کلاس زبان
 company: ""
 date: 2026-03-21
 description: توسعه یک پلتفرم Full-Stack برای جستجو، مقایسه و ثبت‌نام در کلاس‌های زبان، شامل پنل کاربری، پنل مدیریت آموزشگاه و پنل مدیریت سیستم، با تمرکز بر تجربه کاربری، معماری قابل توسعه و مدیریت کامل فرانت‌اند و بک‌اند.
-endDate: 2026-08-11
+endDate: 2026-11-11
 
-image: ""
+image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_.png"
 
 images:
-  - src: ""
-    alt: صفحه اصلی پلتفرم زبانجو
-  - src: ""
-    alt: جستجو و نمایش کلاس‌های زبان
-  - src: ""
-    alt: پنل کاربری
-  - src: ""
-    alt: پنل مدیریت آموزشگاه
-  - src: ""
-    alt: پنل مدیریت سیستم
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_.png"
+    alt: پلتفرم زبانجو
 
-startDate: 2026-03-21
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%287%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%2810%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%283%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%28Samsung%20Galaxy%20S8%2B%29%20%283%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%281%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%2813%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%28Samsung%20Galaxy%20S8%2B%29%20%281%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%288%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%28Samsung%20Galaxy%20S8%2B%29%20%282%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%286%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%28Samsung%20Galaxy%20S8%2B%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%282%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%2812%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%2811%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%284%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%285%29.png"
+    alt: پلتفرم زبانجو
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%289%29.png"
+    alt: پلتفرم زبانجو
+
+startDate: 2026-05-21
 
 tags:
   - Full-Stack
@@ -61,7 +104,7 @@ technologies:
     items:
       - MapLibre GL
       - OpenLayers
-      - Neshan Maps
+      - OpenStreetMap
   - category: content
     items:
       - Nuxt Content
@@ -90,4 +133,3 @@ links:
     to: https://zaban-jo.lovable.app
     target: _blank
     icon: i-lucide-external-link
-

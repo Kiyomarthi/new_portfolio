@@ -24,7 +24,8 @@ content/*.yml, content/blog/*.md, content/projects/*.yml
 |---|---|---|---|
 | `index` | page | `index.yml` | Home page content (hero, about, experience, testimonials, FAQ) |
 | `about` | page | `about.yml` | About page content (rich text + images) |
-| `projects` | data | `projects/*.yml` | Project cards (title, description, image, url, tags, date) |
+| `projects` | page | `projects/*.yml` | Project cards (title, description, image, url, tags, date, optional `order`) |
+| `projectChallenges` | page | `projects/*-challenges.md` | Long-form project challenges (Markdown), connected to project by slug |
 | `blog` | page | `blog/*.md` | Blog posts (Markdown body + front matter) |
 | `pages` | page | `projects.yml`, `blog.yml` | Listing page metadata |
 | `contact` | page | `contact.yml` | Contact page: array of contact methods (title, icon, color, url) |

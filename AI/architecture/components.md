@@ -56,8 +56,9 @@ Reusable feature components that handle their own data fetching and can be used 
 
 ### `model/projects/list.vue`
 - Props: `showMore?: boolean` (default `false`), `initialLimit?: number`
-- Fetches projects data via `queryCollection('projects').order('date', 'DESC').all()`
-- Renders each project as a `UCard` with image carousel, description, tags, and external link
+- Fetches projects data via `queryCollection('projects').all()`
+- Sorts projects explicitly by the `order` field (ordered first ascending; unordered after, by date DESC) — see `data-flow.md` "Project Ordering"
+- Renders each project as a `UCard` with image, description, tags, and detail link
 - Uses `NuxtImg` for optimized image rendering
 - When `showMore` is enabled and `initialLimit` is set: shows limited items + "Show More Projects" button
 - Clicking "Show More" reveals all remaining projects
