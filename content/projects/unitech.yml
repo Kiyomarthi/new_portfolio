@@ -1,0 +1,77 @@
+title: فروشگاه اینترنتی یونیتک
+company: ویاناسیستم
+date: 2025-01-01
+description: توسعه و پیاده‌سازی یک فروشگاه اینترنتی با پشتیبانی از پنل کاربری، پنل مدیریت و پنل فروشندگان، با تمرکز بر معماری Atomic Design، جداسازی رابط کاربری از منطق برنامه و ایجاد ساختاری ماژولار و قابل توسعه.
+endDate: 2025-12-31
+
+image: ""
+images:
+  - src: ""
+    alt: صفحه اصلی فروشگاه یونیتک
+  - src: ""
+    alt: پنل کاربری
+  - src: ""
+    alt: پنل مدیریت
+  - src: ""
+    alt: پنل فروشندگان
+  - src: ""
+    alt: صفحات فروشگاه و محصولات
+
+startDate: 2025-01-01
+
+tags:
+  - فروشگاه اینترنتی
+  - Atomic Design
+  - پنل مدیریت
+  - پنل فروشندگان
+  - Vue.js
+  - Nuxt.js
+
+technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 4
+      - Vue.js 3
+      - Vue Router
+      - Pinia
+      - Tailwind CSS
+      - DaisyUI
+      - Sass
+  - category: architecture
+    items:
+      - Atomic Design
+      - Component-Based Architecture
+      - Composables
+      - Separation of UI and Logic
+  - category: seo
+    items:
+      - Nuxt SEO
+      - Nuxt Schema.org
+      - Nuxt Sitemap
+      - Nuxt Robots
+      - Nuxt OG Image
+      - HTML Validator
+  - category: performance
+    items:
+      - Nuxt Image
+      - Nuxt Delay Hydration
+      - Sharp
+      - Nuxt Analyze
+  - category: state-and-utilities
+    items:
+      - Pinia
+      - VueUse
+      - Lodash
+      - Swiper
+      - Vue Toastification
+      - Vue3 Zoomer
+      - AOS
+
+url: ""
+
+links:
+  - label: مشاهده سایت
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
+
