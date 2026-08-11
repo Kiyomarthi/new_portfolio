@@ -5,8 +5,23 @@ const props = defineProps<{
 }>()
 
 const { data: projects } = await useAsyncData('projects-list', () =>
-  queryCollection('projects').order('date', 'DESC').all()
+  queryCollection('projects').all()
 )
+
+// Explicit ordering: projects with an `order` value first (ascending),
+// then projects without an `order` value (sorted by date DESC as fallback).
+const sortedProjects = computed(() => {
+  const all = [...(projects.value || [])]
+  return all.sort((a, b) => {
+    const hasA = typeof a.order === 'number'
+    const hasB = typeof b.order === 'number'
+    if (hasA && hasB) return a.order - b.order
+    if (hasA && !hasB) return -1
+    if (!hasA && hasB) return 1
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
+})
+
 if (!projects.value) {
   throw createError({
     statusCode: 404,
@@ -16,20 +31,20 @@ if (!projects.value) {
 }
 
 const visibleProjects = computed(() => {
-  const all = projects.value || []
+  const all = sortedProjects.value
   if (!props.showMore || !props.initialLimit) return all
   return all.slice(0, props.initialLimit)
 })
 
 const hasMore = computed(() => {
   if (!props.showMore || !props.initialLimit) return false
-  return (projects.value?.length || 0) > props.initialLimit
+  return (sortedProjects.value?.length || 0) > props.initialLimit
 })
 
 const showAll = ref(false)
 
 const displayedProjects = computed(() => {
-  if (!props.showMore || showAll.value) return projects.value || []
+  if (!props.showMore || showAll.value) return sortedProjects.value
   return visibleProjects.value
 })
 
