@@ -63,7 +63,7 @@ technologies:
       - Nuxt Robots
       - Nuxt OG Image
       - HTML Validator
-  - category: state-and-utilities
+  - category: state & utilities
     items:
       - Pinia
       - VueUse
