@@ -94,6 +94,7 @@ export default defineContentConfig({
         image: z.string().nonempty().editor({ input: 'media' }),
         images: z.array(createImageSchema()).optional(),
         url: z.string().nonempty(),
+        order: z.number().int().optional(),
         tags: z.array(z.string()),
         technologies: z
           .array(

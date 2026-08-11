@@ -1,29 +1,42 @@
 title: فروشگاه اینترنتی یونیتک
 company: ویاناسیستم
-date: 2025-01-01
+date: 2024-012-01
 description: توسعه و پیاده‌سازی یک فروشگاه اینترنتی با پشتیبانی از پنل کاربری، پنل مدیریت و پنل فروشندگان، با تمرکز بر معماری Atomic Design، جداسازی رابط کاربری از منطق برنامه و ایجاد ساختاری ماژولار و قابل توسعه.
-endDate: 2025-12-31
+endDate: 2025-03-01
 
-image: ""
+image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_.png"
 images:
-  - src: ""
-    alt: صفحه اصلی فروشگاه یونیتک
-  - src: ""
-    alt: پنل کاربری
-  - src: ""
-    alt: پنل مدیریت
-  - src: ""
-    alt: پنل فروشندگان
-  - src: ""
-    alt: صفحات فروشگاه و محصولات
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%20%282%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%20%283%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_computer%28Samsung%20Galaxy%20S8%2B%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_p_634816_samsung-galaxy-s26-plus-5g-dual-sim-256gb-12gb%20%281%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_p_634816_samsung-galaxy-s26-plus-5g-dual-sim-256gb-12gb%20%281%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%28Samsung%20Galaxy%20S8%2B%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_p_634816_samsung-galaxy-s26-plus-5g-dual-sim-256gb-12gb%28Samsung%20Galaxy%20S8%2B%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%20%284%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%20%281%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%28Samsung%20Galaxy%20S8%2B%29%20%281%29.png"
+    alt: فروشگاه یونیتک
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_computer%28Samsung%20Galaxy%20S8%2B%29.png"
+    alt: فروشگاه یونیتک
 
-startDate: 2025-01-01
+startDate: 2024-11-01
 
 tags:
   - فروشگاه اینترنتی
   - Atomic Design
-  - پنل مدیریت
-  - پنل فروشندگان
+  - panels
   - Vue.js
   - Nuxt.js
 
@@ -41,7 +54,6 @@ technologies:
     items:
       - Atomic Design
       - Component-Based Architecture
-      - Composables
       - Separation of UI and Logic
   - category: seo
     items:
@@ -51,12 +63,6 @@ technologies:
       - Nuxt Robots
       - Nuxt OG Image
       - HTML Validator
-  - category: performance
-    items:
-      - Nuxt Image
-      - Nuxt Delay Hydration
-      - Sharp
-      - Nuxt Analyze
   - category: state-and-utilities
     items:
       - Pinia
@@ -67,11 +73,10 @@ technologies:
       - Vue3 Zoomer
       - AOS
 
-url: ""
+url: "https://unitech.ir"
 
 links:
   - label: مشاهده سایت
-    to: ""
+    to: "https://unitech.ir"
     target: _blank
     icon: i-lucide-external-link
-
