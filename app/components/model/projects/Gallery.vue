@@ -1,34 +1,30 @@
 <script setup lang="ts">
 const props = defineProps<{
-  images: Array<{ src: string, alt: string }>
-  url: string
-}>()
+  images: Array<{ src: string; alt: string }>;
+  url: string;
+}>();
 
-const showModal = ref(false)
-const currentSlide = ref(0)
+const showModal = ref(false);
+const currentSlide = ref(0);
 
 const displayImages = computed(() => {
-  return props.images?.slice(0, 4) || []
-})
+  return props.images?.slice(0, 4) || [];
+});
 
 const additionalCount = computed(() => {
-  return Math.max(0, (props.images?.length || 0) - 4)
-})
+  return Math.max(0, (props.images?.length || 0) - 4);
+});
 
 function openModal(index: number = 0) {
-  currentSlide.value = index
-  showModal.value = true
+  currentSlide.value = index;
+  showModal.value = true;
 }
 
-const open = ref<boolean>(false)
+const open = ref<boolean>(false);
 </script>
 
 <template>
-  <div
-    target="_blank"
-    class="grid grid-cols-3 gap-2"
-    @click="open = true"
-  >
+  <div target="_blank" class="grid grid-cols-3 gap-2" @click="open = true">
     <!-- First image (main, larger) -->
     <div
       v-if="displayImages[0]"
@@ -95,7 +91,9 @@ const open = ref<boolean>(false)
         v-if="additionalCount > 0"
         class="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/60 transition-colors duration-300"
       >
-        <span class="text-white text-2xl font-semibold">+{{ additionalCount }}</span>
+        <span class="text-white text-2xl font-semibold"
+          >+{{ additionalCount }}</span
+        >
       </div>
       <div
         v-else
@@ -115,14 +113,8 @@ const open = ref<boolean>(false)
       </div>
     </div> -->
 
-    <WidgetResponseModal
-      v-model="open"
-      fullscreen
-    >
-      <div
-        dir="ltr"
-        class="w-full max-w-xl mx-auto"
-      >
+    <WidgetResponseModal v-model="open" fullscreen>
+      <div dir="ltr" class="w-full min-w-[83dvw] max-w-xl mx-auto">
         <u-carousel
           v-slot="{ item, index }"
           loop
@@ -131,17 +123,19 @@ const open = ref<boolean>(false)
           wheel-gestures
           :prev="{ color: 'neutral', variant: 'solid' }"
           :next="{ color: 'neutral', variant: 'solid' }"
-          :items="displayImages"
+          :items="images"
           class="w-full"
         >
-          <nuxt-img
-            :src="item?.src"
-            :alt="`تصویر ${index + 1}`"
-            width="640"
-            height="640"
-            loading="lazy"
-            class="w-full h-full object-cover rounded-lg"
-          />
+          <div class="w-[75dvw] h-[80dvh] flex items-center justify-center">
+            <nuxt-img
+              :src="item?.src"
+              :alt="item?.alt || `تصویر ${index + 1}`"
+              width="100%"
+              height="640"
+              loading="lazy"
+              class="max-w-full max-h-[80dvh] w-full h-auto object-contain rounded-lg"
+            />
+          </div>
         </u-carousel>
       </div>
     </WidgetResponseModal>
