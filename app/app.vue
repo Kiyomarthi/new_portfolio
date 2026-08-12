@@ -11,6 +11,14 @@ useHead({
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { key: "theme-color", name: "theme-color", content: color },
   ],
+
+  script: [
+    {
+      src = "https://cdn.pulse.is/livechat/loader.js",
+      "data-live-chat-id": "6a7c9de4f3bc2bbef10364ec",
+      async: true,
+    },
+  ],
 });
 
 useSeoMeta({
@@ -62,9 +70,3 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
     </ClientOnly>
   </UApp>
 </template>
-
-<script
-  src="https://cdn.pulse.is/livechat/loader.js"
-  data-live-chat-id="6a7c9de4f3bc2bbef10364ec"
-  async
-></script>
