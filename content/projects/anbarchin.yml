@@ -1,0 +1,95 @@
+title: انبارچین — پلتفرم اجاره انبار و پارکینگ
+company: ویاناسیستم
+date: 2025-09-23
+description: توسعه و پیاده‌سازی بخش‌هایی از یک پلتفرم مدیریت و نمایش اطلاعات مکانی با تمرکز بر ارتباطات لحظه‌ای، کار با نقشه‌های تعاملی، داده‌های وکتوری، لایه‌ها، کلاسترها و رابط کاربری مبتنی بر Vuetify.
+endDate: 2025-11-21
+image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/hero.jpg"
+images:
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/hero.jpg"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Frame%20932.png"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Frame%20941.png"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Storages%20list.jpg"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Storages%20list.jpg"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/host-chat.jpg"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/host-my%20ads%20%281%29.png"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/host-my%20ads.png"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/host-personal%20info.jpg"
+    alt: پروژه انبارچین
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/host-personal%20info.png"
+    alt: پروژه انبارچین
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
+startDate: 2025-09-23
+tags:
+  - Real-Time
+  - WebSocket
+  - Maps
+  - GIS
+  - OpenLayers
+  - Vector Maps
+  - Vuetify
+  - Nuxt.js
+technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 3
+      - Vue.js 3
+      - Vuetify 3
+      - Pinia
+      - VueUse
+      - Vue Router
+      - Axios
+  - category: realtime
+    items:
+      - WebSocket
+      - Live Communication
+      - Real-Time Data Handling
+  - category: maps
+    items:
+      - OpenLayers
+      - vue3-openlayers
+      - Vector Data
+      - Custom Map Styles
+      - Map Layers
+      - Clustering
+      - Popups
+  - category: ui-and-content
+    items:
+      - Vuetify
+      - TinyMCE
+      - FilePond
+      - Swiper
+      - Vue Draggable
+  - category: utilities
+    items:
+      - Lodash
+      - Jalali Moment
+      - AOS
+      - Nuxt i18n
+  - category: seo-and-pwa
+    items:
+      - Nuxt SEO
+      - Vite PWA
+      - Nuxt Delay Hydration
+url: "https://www.figma.com/proto/zBjS5LV9fNWEHEUg9vAPRf/anbarchin?node-id=180-3451&t=QcK8dU9L0pblUFIq-1"
+order: "6"

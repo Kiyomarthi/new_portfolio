@@ -3,9 +3,7 @@ company: ""
 date: 2026-04-21
 description: فورک و توسعه یک پروژه چت مبتنی بر هوش مصنوعی با هدف آشنایی عملی با معماری AI Chat، استریم پاسخ‌ها، مدیریت مکالمات، تعامل زنده با رابط کاربری و پروتکل MCP برای فراهم کردن امکان تعامل AI Agentها با وب‌سایت.
 endDate: 2026-06-21
-
 image: ""
-
 images:
   - src: ""
     alt: رابط کاربری سیستم AI Chat
@@ -15,9 +13,12 @@ images:
     alt: رابط مدیریت و نمایش مکالمات
   - src: ""
     alt: تعامل AI Agent با وب‌سایت
-
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
 startDate: 2026-04-21
-
 tags:
   - AI Chat
   - AI Agent
@@ -26,7 +27,6 @@ tags:
   - Nuxt
   - TypeScript
   - Generative AI
-
 technologies:
   - category: frontend
     items:
@@ -66,11 +66,5 @@ technologies:
       - Shiki
       - Comark
       - Motion V
-
-url: "/"
-
-links:
-  - label: مشاهده پروژه
-    to: ""
-    target: _blank
-    icon: i-lucide-external-link
+url: /
+order: "4"
