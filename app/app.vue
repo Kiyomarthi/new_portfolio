@@ -14,7 +14,7 @@ useHead({
 
   script: [
     {
-      src = "https://cdn.pulse.is/livechat/loader.js",
+      src: "https://cdn.pulse.is/livechat/loader.js",
       "data-live-chat-id": "6a7c9de4f3bc2bbef10364ec",
       async: true,
     },
