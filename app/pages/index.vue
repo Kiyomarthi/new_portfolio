@@ -25,7 +25,7 @@ useSeoMeta({
     <UPageSection
       :ui="{
         container:
-          'pt-0! block lg:blcok lg:blcok  gap-10! lg:gap-10! gap-10! pb-10!',
+          'pt-0! grid! gap-10! lg:gap-10! pb-10!',
       }"
     >
       <LandingAbout :page />
