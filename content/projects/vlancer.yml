@@ -1,47 +1,37 @@
 title: ویانا فریلنسر — پلتفرم کاریابی و پروژه‌های فریلنسری
 company: ویاناسیستم
-
-date: "2025-05-01"
+date: 2025-05-01
 description: توسعه و پیاده‌سازی یک پلتفرم فریلنسری برای انتشار و دریافت پروژه، شامل پنل کاربری، پنل کارفرما، پنل فریلنسر و پنل مدیریت، با تمرکز بر ارتباطات Real-Time، سیستم نوتیفیکیشن، SEO فنی و بهینه‌سازی عملکرد.
-
-startDate: "2025-05-01"
-endDate: "2025-07-01"
-
-order: "7"
-
-image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20home%20page.png"
-
+endDate: 2025-07-01
+image: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20home%20page.png
 images:
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20home%20page.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20home%20page.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20search%20results%20%281%29.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20search%20results%20%281%29.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/client%20dashboard.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/client%20dashboard.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile-desk.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile-desk.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/desk-conflict.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/desk-conflict.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/desk-%20payment.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/desk-%20payment.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile-portfolio.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile-portfolio.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile-finances.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/freelancer%20profile-finances.png
     alt: ویانا فریلنسر
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/desk-files.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/vlancer/desk-files.png
     alt: ویانا فریلنسر
-
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
+order: "7"
+startDate: 2025-05-01
 tags:
   - Freelancing
   - Real-Time
@@ -50,7 +40,6 @@ tags:
   - Performance
   - Nuxt.js
   - Tailwind
-
 technologies:
   - category: frontend
     items:
@@ -67,33 +56,19 @@ technologies:
       - Laravel Echo
       - Real-Time Events
       - Push Notifications
-  - category: maps
-    items:
-      - OpenLayers
-      - vue3-openlayers
-  - category: seo-and-performance
+  - category: seo & performance
     items:
       - Nuxt SEO
-      - Nuxt Image
       - Nuxt HTML Validator
       - Nuxt Delay Hydration
       - Lighthouse
-      - PageSpeed Insights
       - Bundle Analysis
-  - category: ui-and-utilities
+  - category: ui & utilities
     items:
       - Swiper
-      - Vue Draggable
       - Vue Toastification
       - Vue3 Persian DateTime Picker
       - AOS
       - Lodash
       - Sass
-
-url: "https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System--website--stories--posts-?node-id=15201-34686&t=TMeyeGvKEwzvCzOF-1"
-
-links:
-  - label: مشاهده پروژه
-    to: ""
-    target: _blank
-    icon: i-lucide-external-link
+url: https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System--website--stories--posts-?node-id=15201-34686&t=TMeyeGvKEwzvCzOF-1

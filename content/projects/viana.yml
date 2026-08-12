@@ -3,82 +3,69 @@ company: ویاناسیستم
 date: 2024-09-23
 description: طراحی و پیاده‌سازی مجموعه‌ای از لندینگ‌پیج‌های شرکتی با تمرکز بر UI و UX، پیاده‌سازی دقیق طرح‌های Figma، طراحی Responsive و ایجاد کامپوننت‌های قابل استفاده مجدد برای کاهش هزینه نگهداری و تسهیل توسعه.
 endDate: 2024-11-21
-
-order: "8"
-
-image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Home%20page.png"
-
+image: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Home%20page.png
 images:
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Home%20page.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Home%20page.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Estimate%20price.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Estimate%20price.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Product%20details.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Product%20details.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Products.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Products.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Social%20marketing.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Social%20marketing.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Web%20design.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/Web%20design.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/bg.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/bg.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/graphic%20design.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/graphic%20design.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/log%20in%201.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/log%20in%201.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/notifs.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/notifs.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/personal%20info.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/personal%20info.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/price%20estimation%20history.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/price%20estimation%20history.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/purchase%20history.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/purchase%20history.png
     alt: ویاناسیستم
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/seo.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana/seo.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/Web%20design-mashhad%20%281%29.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/Web%20design-mashhad%20%281%29.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/Web%20design-mashhad.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/Web%20design-mashhad.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/online%20shop%20website.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/online%20shop%20website.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/panel-courses.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/panel-courses.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/plans.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/plans.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/portfolio.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/portfolio.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/price%20list.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/price%20list.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/responsive-app%20design.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/responsive-app%20design.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/responsive-portfolio.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/responsive-portfolio.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/responsive-software%20design.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/responsive-software%20design.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/software%20Design%20%281%29.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/software%20Design%20%281%29.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/viana%20academy-course%20details.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/viana%20academy-course%20details.jpg
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/viana%20academy-watch%20videos.jpg"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana2/viana%20academy-watch%20videos.jpg
     alt: ویاناسیستم
-
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
+order: "8"
 startDate: 2024-09-23
-
 tags:
   - UI/UX
   - Landing Page
@@ -88,7 +75,6 @@ tags:
   - Reusable Components
   - Vuetify
   - Nuxt.js
-
 technologies:
   - category: frontend
     items:
@@ -104,26 +90,10 @@ technologies:
       - Sass
       - DaisyUI
       - Tailwind Merge
-  - category: ui-and-interaction
+  - category: ui & interaction
     items:
       - Vuetify
       - Swiper
       - AOS
       - Vue Toastification
-  - category: optimization
-    items:
-      - Nuxt Image
-      - Nuxt Delay Hydration
-      - Sharp
-  - category: localization
-    items:
-      - Nuxt i18n
-      - Jalali Moment
-
-url: "https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System--website--stories--posts-?node-id=29-1354&t=TMeyeGvKEwzvCzOF-1"
-
-links:
-  - label: مشاهده پروژه
-    to: ""
-    target: _blank
-    icon: i-lucide-external-link
+url: https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System--website--stories--posts-?node-id=29-1354&t=TMeyeGvKEwzvCzOF-1

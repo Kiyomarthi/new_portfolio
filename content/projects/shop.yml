@@ -1,0 +1,87 @@
+title: ویانا سیستم — فروشگاه اینترنتی
+company: ویاناسیستم
+date: 2024-06-22
+description: طراحی و پیاده‌سازی یک فروشگاه اینترنتی با تمرکز بر رابط کاربری، تجربه کاربری و ساختار مناسب صفحات فروشگاهی با استفاده از Nuxt.js، Vue.js و Vuetify.
+endDate: 2024-08-21
+
+image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Home%20page.png"
+
+images:
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Home%20page.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Home-responsive.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Personal%20info.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/cart%20%281%29.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/cart%20%282%29.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/cart.png"
+    alt: فروشگاه ویانا
+
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/item%20details.png"
+    alt: فروشگاه ویانا
+
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/orders.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/product%20details1.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/product%20list.png"
+    alt: فروشگاه ویانا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/search%20results.png"
+    alt: فروشگاه ویانا
+
+
+startDate: 2024-06-22
+
+tags:
+  - E-commerce
+  - UI/UX
+  - Online Store
+  - Nuxt.js
+  - Vue.js
+  - Vuetify
+
+technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 3
+      - Vue.js 3
+      - Pinia
+      - Vue Router
+      - VueUse
+  - category: ui
+    items:
+      - Vuetify
+      - Swiper
+      - AOS
+      - Vue Toastification
+  - category: styling
+    items:
+      - Sass
+      - Tailwind CSS
+      - Tailwind Merge
+  - category: utilities
+    items:
+      - Axios
+      - Lodash
+      - Jalali Moment
+
+url: "https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System-website-stories-posts?node-id=4514-29531&t=TMeyeGvKEwzvCzOF-1"
+
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link

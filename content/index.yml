@@ -43,65 +43,144 @@ experience:
         color: "#0bbfd0"
 faq:
   title: سوالات متداول
-  description: پاسخ به سوالات رایج درباره فرایند کاری و خدمات من.
+  description: پاسخ به سوالات رایج درباره تجربه، مهارت‌ها، پروژه‌ها و زمینه‌های تخصصی من.
   categories:
-    - title: Services & Process
+    - title: تجربه و حوزه پروژه‌ها
       questions:
-        - label: What services do you offer?
+        - label: پروژه‌های شما در چه زمینه‌هایی بوده‌اند؟
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            در پروژه‌های مختلفی در حوزه‌های فروشگاهی، گردشگری، پلتفرم‌های خدماتی، مدیریت پروژه، مارکت‌پلیس، آموزش، نقشه و موقعیت مکانی و ابزارهای مبتنی بر هوش مصنوعی فعالیت داشته‌ام. تجربه من هم شامل پروژه‌های شرکتی و واقعی و هم پروژه‌های شخصی و دمو برای یادگیری و توسعه مهارت‌های جدید بوده است.
+        - label: آیا تجربه توسعه پروژه‌های فروشگاهی را دارید؟
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            بله. در چندین پروژه فروشگاهی فعالیت داشته‌ام و با پیاده‌سازی بخش‌های مختلف یک فروشگاه اینترنتی، رابط کاربری، صفحات محصول، پنل‌های مدیریتی و کاربری و معماری قابل توسعه Frontend آشنا هستم. در برخی پروژه‌ها نیز به‌صورت Full-Stack روی بخش‌های Backend و APIها کار کرده‌ام.
+        - label: آیا روی پروژه‌های گردشگری کار کرده‌اید؟
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            بله. در پروژه مارکوپرو روی یک پلتفرم گردشگری برای رزرو آنلاین بلیط هواپیما، هتل، تور و خدمات مرتبط فعالیت داشته‌ام. در این پروژه تمرکز ویژه‌ای روی Performance، SEO فنی، Caching و معماری Frontend وجود داشت.
+        - label: آیا تجربه پروژه‌های شرکتی و سازمانی دارید؟
+          content: |
+            بله. بخشی از تجربه کاری من مربوط به پروژه‌های شرکتی است که در آن‌ها روی Landing Pageها، پنل‌های مدیریتی، فروشگاه‌ها، سیستم‌های مدیریت وظایف و پلتفرم‌های مختلف فعالیت کرده‌ام.
+        - label: آیا پروژه Full-Stack هم پیاده‌سازی کرده‌اید؟
+          content: |
+            بله. در پروژه‌هایی مانند سلورا و زبانجو، توسعه را به‌صورت Full-Stack انجام داده‌ام؛ از طراحی UI/UX و توسعه Frontend گرفته تا طراحی دیتابیس، معماری Backend، APIها، Validation، Authentication، Deployment و Hosting.
+    - title: تکنولوژی و معماری
       questions:
-        - label: How much does a project typically cost?
+        - label: با چه تکنولوژی‌هایی کار می‌کنید؟
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            تمرکز اصلی من روی Vue.js و Nuxt.js است و در کنار آن با TypeScript، JavaScript، Tailwind CSS، Vuetify، Nuxt UI، Pinia و VueUse کار کرده‌ام. در Backend نیز با Nitro، Node.js، REST API، Prisma، Drizzle، MySQL و Redis تجربه عملی دارم.
+        - label: آیا با معماری ماژولار و کامپوننت‌های قابل استفاده مجدد کار کرده‌اید؟
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
+            بله. در پروژه‌هایم از Modular Architecture، Component-Based Architecture و Reusable Components استفاده کرده‌ام تا کدها قابل نگهداری و توسعه باشند. همچنین با Atomic Design و Nuxt Layers برای ایجاد ساختارهای قابل استفاده مجدد و مقیاس‌پذیر کار کرده‌ام.
+        - label: آیا با Atomic Design کار کرده‌اید؟
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
+            بله. در چند پروژه ساختار رابط کاربری بر اساس Atomic Design پیاده‌سازی شده است؛ به این صورت که کامپوننت‌های پایه و اتمی در کنار یکدیگر قرار گرفته و از ترکیب آن‌ها کامپوننت‌های پیچیده‌تر ساخته می‌شوند. همچنین منطق برنامه از UI جدا شده و در بخش‌هایی مانند Composableها مدیریت شده است.
+        - label: آیا تجربه کار با Nuxt Layers را دارید؟
           content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            بله. با Nuxt Layers و معماری مبتنی بر Layer آشنا هستم و از آن برای اشتراک‌گذاری ساختارها، کامپوننت‌ها و قابلیت‌های مشترک و ایجاد پروژه‌هایی با معماری ماژولار و قابل توسعه استفاده کرده‌ام.
+    - title: قابلیت‌ها
       questions:
-        - label: What do you enjoy most about your work?
+        - label: آیا تجربه پیاده‌سازی سیستم چت را دارید؟
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            بله. در پروژه‌هایی مانند انبارچین و پروژه AI Chat با مفاهیم ارتباطات Real-Time و سیستم‌های Chat کار کرده‌ام. در این مسیر با WebSocket، Socket، مدیریت پیام‌ها و ارتباط لحظه‌ای Client و Server آشنا شده و سیستم چت را به‌صورت عملی پیاده‌سازی کرده‌ام.
+        - label: آیا با پیاده‌سازی نقشه‌های تعاملی کار کرده‌اید؟
           content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            بله. تجربه عملی کار با OpenLayers، MapLibre و نقشه‌های تعاملی را دارم. در پروژه‌ها با Vector Data، Custom Styling، Layer Management، Clustering، Popupها و Map Interaction کار کرده‌ام و قابلیت‌های مختلف نقشه را متناسب با نیاز پروژه پیاده‌سازی کرده‌ام.
+        - label: آیا تجربه پیاده‌سازی سیستم Notification دارید؟
+          content: |
+            بله. سیستم Push Notification را با استفاده از Firebase و Web Push پیاده‌سازی کرده‌ام. این تجربه شامل راه‌اندازی Service Worker، ارسال Notification از Backend به Client، مدیریت دستگاه‌ها و کاربران، ثبت اطلاعات Device و طراحی APIهای مرتبط با مدیریت و تحلیل Notificationها بوده است.
+        - label: آیا با سیستم Authentication و مدیریت Session کار کرده‌اید؟
+          content: |
+            بله. در پروژه‌های Full-Stack سیستم‌های Authentication را پیاده‌سازی کرده‌ام که شامل Login، Session Management، Access Token، Refresh Token، JWT، Hash کردن رمز عبور، مدیریت کاربران و جداول مرتبط با Authentication در دیتابیس بوده است.
+        - label: آیا تجربه کار با Caching دارید؟
+          content: |
+            بله. در پروژه‌هایی مانند مارکوپرو از معماری Caching چندلایه استفاده کرده‌ام. این معماری شامل Client-Side Caching، مدیریت State، Response Headers و Cache-Control در کنار Server-Side Caching با Redis و Nitro بوده است تا درخواست‌های تکراری کاهش پیدا کرده و Performance سیستم بهبود پیدا کند.
+        - label: آیا تجربه کار با دیتابیس و طراحی Backend دارید؟
+          content: |
+            بله. در پروژه‌های Full-Stack با MySQL و SQLite کار کرده‌ام و با مفاهیمی مانند Database Modeling، طراحی جداول و روابط، ORMهایی مانند Prisma و Drizzle، طراحی API و معماری Backend آشنا هستم.
+    - title: SEO و Performance
+      questions:
+        - label: آیا تجربه SEO فنی دارید؟
+          content: |
+            بله. در پروژه‌های مختلف روی Technical SEO کار کرده‌ام و با Sitemap، Multi Sitemap، Schema.org، Robots، Open Graph و Dynamic OG Imageها کار کرده‌ام. همچنین ساختار صفحات و Metadataها را برای بهبود قابلیت ایندکس شدن و نمایش صحیح محتوا در موتورهای جستجو تنظیم کرده‌ام.
+        - label: آیا تجربه بهینه‌سازی Performance و PageSpeed دارید؟
+          content: |
+            بله. در پروژه‌های مختلف روی Lighthouse و PageSpeed کار کرده‌ام و بهینه‌سازی‌هایی در زمینه Bundle Size، Image Optimization، Caching، Hydration، Response Headers و ساختار Frontend انجام داده‌ام. هدف، بهبود Performance در کنار معیارهای SEO، Accessibility و Best Practices بوده است.
+        - label: آیا OG Imageها را به‌صورت Dynamic پیاده‌سازی کرده‌اید؟
+          content: |
+            بله. در برخی پروژه‌ها OG Imageها به‌صورت Dynamic و بر اساس یک Template ساخته شده‌اند. بنابراین برای هر صفحه یا محتوا نیازی به ساخت و ذخیره دستی یک تصویر جداگانه نیست و تصویر موردنظر با استفاده از داده‌های زنده همان محتوا به‌صورت خودکار تولید می‌شود.
+    - title: هوش مصنوعی
+      questions:
+        - label: آیا با توسعه AI Chat و AI Agentها کار کرده‌اید؟
+          content: |
+            بله. در پروژه AI Chat با مفاهیم مربوط به ساخت سیستم‌های Chat مبتنی بر هوش مصنوعی، Streaming Response، مدیریت Conversation و نمایش پاسخ‌های زنده در رابط کاربری آشنا شده‌ام و آن‌ها را به‌صورت عملی پیاده‌سازی کرده‌ام.
+        - label: آیا با پروتکل MCP آشنایی دارید؟
+          content: |
+            بله. در پروژه AI Chat با Model Context Protocol یا MCP کار کرده‌ام و با مفهوم فراهم کردن ابزارها و قابلیت‌هایی آشنا شده‌ام که به AI Agentها اجازه می‌دهند با سیستم‌ها و سرویس‌های مختلف تعامل داشته باشند.
 hero:
   links:
     - label: Use this template
       to: https://github.com/nuxt-ui-templates/portfolio
       color: neutral
   images:
-    - src: /hero/random-1.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/marcopro/demo.marcopro.co_.png
       alt: Random Image 1
-    - src: /hero/random-2.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/marcopro/demo.marcopro.co_%20%282%29.png
       alt: Random Image 2
-    - src: /hero/random-3.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/marcopro/demo.marcopro.co_%20%286%29.png
       alt: Random Image 3
-    - src: /hero/random-4.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_.png
       alt: Random Image 4
-    - src: /hero/random-5.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%20%282%29.png
       alt: Random Image 5
-    - src: /hero/random-6.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_%20%283%29.png
       alt: Random Image 6
-    - src: /hero/random-7.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/unitech/unitech.ir_computer%28Samsung%20Galaxy%20S8%2B%29.png
       alt: Random Image 7
-    - src: /hero/random-8.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/selora-kiumarsi.up.railway.app_.png
       alt: Random Image 8
-    - src: /hero/random-9.avif
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/Screenshot_20260811_172646_Chrome.jpg
       alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/hero.jpg
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Frame%20932.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Frame%20941.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Storages%20list.jpg
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Home%20page.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Home-responsive.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Personal%20info.png
+      alt: Random Image 9
+
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/cart%20%281%29.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/cart%20%282%29.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%287%29.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%283%29.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%2810%29.png
+      alt: Random Image 9
+
+    - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/overview.png
+      alt: Random Image 9
+
+
 seo:
   title: Abolfazl Kiumarsi - Frontend Developer
   description: Welcome to my portfolio! I'm a Frontend Developer specializing in Vue.js and Nuxt.js. I focus on building modern, responsive user interfaces and creating fast, scalable, and user-centered digital experiences.

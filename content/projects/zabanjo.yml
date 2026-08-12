@@ -99,14 +99,12 @@ technologies:
       - Nuxt OG Image
       - Nuxt Schema.org
       - Nuxt LLMS
-  - category: pwa
+  - category: other
     items:
-      - Vite PWA
-      - Service Worker
-      - Progressive Web App
-  - category: media
-    items:
-      - Sharp
+      - Notification Push
+      - Progressive Web App (PWA)
       - Lottie
+      - MCP (AI accessibility)
+     
 url: https://zaban-jo.lovable.app
 order: "5"

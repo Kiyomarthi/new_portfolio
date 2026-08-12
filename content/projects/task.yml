@@ -1,0 +1,60 @@
+title: مدیریت وظایف و پروژه‌ها
+company: ویاناسیستم
+date: 2024-12-22
+description: طراحی و پیاده‌سازی یک سیستم مدیریت وظایف و پروژه‌ها با قابلیت‌هایی مشابه Trello، شامل نمایش‌های کانبان، کارتی و تایم‌لاین، با تمرکز بر مدیریت وظایف، تجربه کاربری و معماری قابل توسعه.
+endDate: 2025-03-20
+image: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/Kanban.png
+images:
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/Kanban.png
+    alt: مدیریت پروژه و وظایف
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/overview.png
+    alt: مدیریت پروژه و وظایف
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/Gantt.png
+    alt: مدیریت پروژه و وظایف
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/card.png
+    alt: مدیریت پروژه و وظایف
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/workspace-%20teams.png
+    alt: مدیریت پروژه و وظایف
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/responsive%20card.png
+    alt: مدیریت پروژه و وظایف
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/log%20in%207.png
+    alt: مدیریت پروژه و وظایف
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
+startDate: 2024-12-22
+tags:
+  - Task Manager
+  - Project Management
+  - Kanban
+  - Timeline
+  - UI/UX
+  - Tailwind CSS
+  - Nuxt.js
+technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 3
+      - Vue.js 3
+      - Pinia
+      - Vue Router
+      - VueUse
+  - category: styling
+    items:
+      - Tailwind CSS
+      - Sass
+      - DaisyUI
+      - Tailwind Merge
+  - category: ui & interaction
+    items:
+      - Swiper
+      - Vue Toastification
+      - Vue Draggable
+  - category: utilities
+    items:
+      - Axios
+      - Lodash
+      - Jalali Moment
+url: https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System--website--stories--posts-?node-id=15740-140690&t=TMeyeGvKEwzvCzOF-1

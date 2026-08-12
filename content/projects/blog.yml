@@ -3,41 +3,32 @@ company: ویاناسیستم
 date: 2024-08-01
 description: طراحی و پیاده‌سازی یک پلتفرم بلاگ با تمرکز بر مدیریت و انتشار محتوا، شامل پنل مدیریت، ویرایشگر محتوا و ساختار لازم برای ایجاد، ویرایش و انتشار مطالب.
 endDate: 2024-09-30
-
-order: "9"
-
-image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog.png"
-
+image: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog.png
 images:
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20%281%29.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20%281%29.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20articles-responsive%20-%20Copy.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20articles-responsive%20-%20Copy.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20articles-responsive.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20articles-responsive.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20list-responsive%20-%20Copy.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20list-responsive%20-%20Copy.png
     alt: ویاناسیستم
-
-  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20list-responsive.png"
+  - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/blog/blog%20list-responsive.png
     alt: ویاناسیستم
-
+links:
+  - label: مشاهده پروژه
+    to: ""
+    target: _blank
+    icon: i-lucide-external-link
+order: "9"
 startDate: 2024-08-01
-
 tags:
   - Blog
   - CMS
-  - Content Management
-  - Admin Panel
-  - Rich Text Editor
   - Nuxt.js
   - Vue.js
-
 technologies:
   - category: frontend
     items:
@@ -49,17 +40,8 @@ technologies:
     items:
       - Rich Text Editor
       - Content Management
-      - Blog Architecture
-  - category: ui-and-utilities
+  - category: ui & utilities
     items:
       - VueUse
       - Swiper
-      - AOS
-
-url: "https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System--website--stories--posts-?node-id=1409-5385&t=TMeyeGvKEwzvCzOF-1"
-
-links:
-  - label: مشاهده پروژه
-    to: ""
-    target: _blank
-    icon: i-lucide-external-link
+url: https://www.figma.com/proto/swWlrSzaQWzZFRJLNeI90t/Viana-System--website--stories--posts-?node-id=1409-5385&t=TMeyeGvKEwzvCzOF-1

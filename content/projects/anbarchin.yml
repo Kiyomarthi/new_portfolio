@@ -1,7 +1,9 @@
 title: انبارچین — پلتفرم اجاره انبار و پارکینگ
 company: ویاناسیستم
 date: 2025-09-23
-description: توسعه و پیاده‌سازی بخش‌هایی از یک پلتفرم مدیریت و نمایش اطلاعات مکانی با تمرکز بر ارتباطات لحظه‌ای، کار با نقشه‌های تعاملی، داده‌های وکتوری، لایه‌ها، کلاسترها و رابط کاربری مبتنی بر Vuetify.
+description: |
+  توسعه و پیاده‌سازی پلتفرم اجاره انباری و پارکینگ که کاربران می‌توانند فضای موردنظر خود را برای اجاره ثبت کنند و مشتریان نیز بر اساس موقعیت مکانی، فضای مناسب را پیدا و اجاره کنند؛ با تمرکز بر ارتباطات لحظه‌ای، نقشه‌های تعاملی، داده‌های وکتوری، لایه‌ها و کلاسترهای نقشه و رابط کاربری مبتنی بر Vuetify.
+
 endDate: 2025-11-21
 image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/hero.jpg"
 images:
@@ -41,14 +43,11 @@ links:
     icon: i-lucide-external-link
 startDate: 2025-09-23
 tags:
-  - Real-Time
   - WebSocket
   - Maps
-  - GIS
-  - OpenLayers
-  - Vector Maps
   - Vuetify
   - Nuxt.js
+  - Chat
 technologies:
   - category: frontend
     items:
@@ -59,21 +58,14 @@ technologies:
       - VueUse
       - Vue Router
       - Axios
-  - category: realtime
-    items:
       - WebSocket
-      - Live Communication
-      - Real-Time Data Handling
+
   - category: maps
     items:
       - OpenLayers
-      - vue3-openlayers
-      - Vector Data
-      - Custom Map Styles
-      - Map Layers
       - Clustering
-      - Popups
-  - category: ui-and-content
+      - Neshan
+  - category: ui & content
     items:
       - Vuetify
       - TinyMCE
@@ -86,7 +78,7 @@ technologies:
       - Jalali Moment
       - AOS
       - Nuxt i18n
-  - category: seo-and-pwa
+  - category: seo & pwa
     items:
       - Nuxt SEO
       - Vite PWA

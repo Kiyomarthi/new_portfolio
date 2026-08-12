@@ -46,57 +46,67 @@ tags:
   - MySQL
   - Atomic Design
   - SEO
+  - PWA
 
 technologies:
-  - category: frontend
-    items:
-      - Nuxt.js 4
-      - Vue.js 3
-      - TypeScript
-      - Nuxt UI
-      - Tailwind CSS v4
-      - Pinia
-      - VueUse
-  - category: backend
-    items:
-      - Nitro
-      - Node.js
-      - REST API
-      - JWT
-      - bcrypt
-      - Firebase Admin
-  - category: database
-    items:
-      - MySQL
-      - SQLite
-      - Prisma
-      - Drizzle
-      - Database Modeling
-  - category: architecture
-    items:
-      - Atomic Design
-      - Frontend Architecture
-      - Backend Architecture
-      - Database Architecture
-      - API Architecture
-  - category: seo
-    items:
-      - Nuxt Sitemap
-      - Multi Sitemap
-      - Nuxt Schema.org
-      - Nuxt OG Image
-      - Nuxt Robots
-  - category: infrastructure
-    items:
-      - Railway
-      - S3
-      - Static File Serving
-      - Environment Configuration
-  - category: testing
-    items:
-      - Vitest
-      - Playwright
-      - Nuxt Test Utils
+
+- category: frontend
+  items:
+  - Nuxt.js 4
+  - Vue.js 3
+  - TypeScript
+  - Nuxt UI
+  - Tailwind CSS v4
+  - Pinia
+  - VueUse
+
+- category: backend
+  items:
+  - Nitro
+  - Node.js
+  - REST API
+  - JWT
+  - bcrypt
+  - Prisma
+  - Firebase Admin
+  - Object Storage (S3)
+
+- category: database
+  items:
+  - MySQL
+  - Prisma
+  - Drizzle
+  - Database Modeling
+
+- category: notifications
+  items:
+  - Push Notifications
+  - Firebase Cloud Messaging (FCM)
+  - Firebase Admin SDK
+  - Web Push
+  - Service Worker
+  - Notification APIs
+
+- category: architecture
+  items:
+  - Atomic Design
+  - Modular Architecture
+  - Component-Based Architecture
+  - Nuxt Layers
+
+- category: seo
+  items:
+  - Nuxt Sitemap
+  - Multi Sitemap
+  - Nuxt Schema.org
+  - Nuxt OG Image
+  - Nuxt Robots
+
+- category: testing
+  items:
+  - Vitest
+  - Playwright
+  - Nuxt Test Utils
 
 url: https://selora-kiumarsi.up.railway.app/
 
