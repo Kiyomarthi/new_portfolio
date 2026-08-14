@@ -58,6 +58,8 @@ tags:
   - Performance
   - SEO
   - Nuxt UI
+  - Caching
+  - Lighthouse
 
 technologies:
   - category: frontend
