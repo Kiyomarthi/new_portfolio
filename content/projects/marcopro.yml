@@ -51,9 +51,6 @@ links:
     icon: i-lucide-external-link
 startDate: 2025-10-27
 tags:
-  - Nuxt
-  - Vue
-  - Tailwind
   - TypeScript
   - Performance
   - SEO
@@ -65,7 +62,6 @@ technologies:
   - category: frontend
     items:
       - Nuxt.js 4
-      - Vue
       - TypeScript
       - Nuxt UI
       - Pinia
@@ -79,11 +75,5 @@ technologies:
     items:
       - "pwa"
       - Leaflet
-  - category: architecture
-    items:
-      - Atomic Design
-      - Modular Architecture
-      - Component-Based Architecture
-      - Nuxt Layers
 
 url: https://demo.marcopro.co
