@@ -43,6 +43,7 @@ images:
     alt: اسکرین‌شات‌های سایت مارکوپرو
   - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/marcopro/demo.marcopro.co_%20%286%29.png
     alt: اسکرین‌شات‌های سایت مارکوپرو
+
 links:
   - label: مشاهده سایت
     to: https://demo.marcopro.co/
@@ -50,16 +51,22 @@ links:
     icon: i-lucide-external-link
 startDate: 2025-10-27
 tags:
+  - Nuxt
+  - Vue
+  - Tailwind
   - TypeScript
   - Performance
   - SEO
   - Nuxt UI
   - Caching
   - Lighthouse
+  - Testing
+
 technologies:
   - category: frontend
     items:
       - Nuxt.js 4
+      - Vue
       - TypeScript
       - Nuxt UI
       - Pinia
@@ -73,5 +80,11 @@ technologies:
     items:
       - "pwa"
       - Leaflet
+  - category: architecture
+    items:
+      - Atomic Design
+      - Modular Architecture
+      - Component-Based Architecture
+      - Nuxt Layers
 
 url: https://demo.marcopro.co
