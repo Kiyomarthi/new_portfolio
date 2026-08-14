@@ -112,7 +112,7 @@ export default defineNuxtConfig({
     repository: {
       provider: 'github',
       owner: 'Kiyomarthi',
-      repo: 'Portfolio',
+      repo: 'new-portfolio',
       branch: 'main'
     }
   }
