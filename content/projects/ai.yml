@@ -18,6 +18,7 @@ links:
     to: ""
     target: _blank
     icon: i-lucide-external-link
+order: "4"
 startDate: 2026-04-21
 tags:
   - AI Chat
@@ -60,11 +61,10 @@ technologies:
       - Zod
       - Nuxt Auth Utils
       - Nuxt CSRF
-  - category: ui-and-content
+  - category: ui & content
     items:
       - Nuxt UI
       - Shiki
       - Comark
       - Motion V
 url: /
-order: "4"
