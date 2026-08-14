@@ -57,7 +57,7 @@ export default defineContentConfig({
         experience: createBaseSchema().extend({
           items: z.array(
             z.object({
-              date: z.date(),
+              date: z.string(),
               position: z.string(),
               company: z.object({
                 name: z.string(),
@@ -106,9 +106,9 @@ export default defineContentConfig({
           .optional(),
         links: z.array(createButtonSchema()).optional(),
         company: z.string().optional(),
-        startDate: z.date().optional(),
-        endDate: z.date().optional(),
-        date: z.date()
+        startDate: z.string().optional(),
+        endDate: z.string().optional(),
+        date: z.string()
       })
     }),
     projectChallenges: defineCollection({
@@ -121,7 +121,7 @@ export default defineContentConfig({
       source: 'blog/*.md',
       schema: z.object({
         minRead: z.number(),
-        date: z.date(),
+        date: z.string(),
         image: z.string().nonempty().editor({ input: 'media' }),
         author: createAuthorSchema()
       })
