@@ -114,6 +114,8 @@ categories:
         level: Advanced
       - name: Nitro Server Caching
         level: Advanced
+      - name: Lighthouse
+        level: Advanced
   - title: API & Rendering
     description: Server communication, API design, and rendering strategies.
     icon: i-lucide-globe

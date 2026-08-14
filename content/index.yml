@@ -20,7 +20,7 @@ description: |
 experience:
   title: سابقه شغلی
   items:
-    - position: frontend developer
+    - position: Frontend Team Lead
       date: 1404 - 1405
       company:
         name: شاهان سفر پارس
@@ -34,7 +34,7 @@ experience:
         logo: i-simple-icons-raycast
         url: /
         color: "#3d4eae"
-    - position: کارآموز
+    - position: هنرجوی فرانت‌اند
       date: 1401 - 1402
       company:
         name: رشدانا
@@ -139,48 +139,32 @@ hero:
       alt: Random Image 8
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/Screenshot_20260811_172646_Chrome.jpg
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/hero.jpg
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Frame%20932.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Frame%20941.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/anbarchin/Storages%20list.jpg
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Home%20page.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Home-responsive.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/Personal%20info.png
       alt: Random Image 9
-
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/cart%20%281%29.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/viana-shop/cart%20%282%29.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%287%29.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%283%29.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/zabanjo/zaban-jo.lovable.app_%20%2810%29.png
       alt: Random Image 9
-
     - src: https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/task/overview.png
       alt: Random Image 9
-
-
 seo:
   title: Abolfazl Kiumarsi - Frontend Developer
   description: Welcome to my portfolio! I'm a Frontend Developer specializing in Vue.js and Nuxt.js. I focus on building modern, responsive user interfaces and creating fast, scalable, and user-centered digital experiences.
