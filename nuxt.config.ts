@@ -104,16 +104,6 @@ export default defineNuxtConfig({
     ],
   },
 
-  image: {
-    provider: "ipx",
-    domains: ["qr2tnegks1uabe3e.public.blob.vercel-storage.com"],
-    ipx: {
-      maxAge: 60 * 60 * 24 * 365,
-    },
-    format: ["avif", "webp"],
-    quality: 75,
-  },
-
   ogImage: {
     zeroRuntime: true,
   },
