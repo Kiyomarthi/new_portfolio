@@ -257,4 +257,14 @@ categories:
         level: Advanced
       - name: Jalali Moment
         level: Advanced
+  - title: Development
+    description: Date handling and general-purpose utility libraries.
+    icon: i-lucide-package
+    skills:
+      - name: Git
+        level: Expert
+      - name: Github & Gitlab
+        level: Expert
+      - name: GitHub Actions and workflows
+        level: Expert
 description: A comprehensive overview of the technologies, frameworks, and tools I work with across the full development stack.

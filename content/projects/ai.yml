@@ -3,15 +3,18 @@ company: ""
 date: 2026-04-21
 description: فورک و توسعه یک پروژه چت مبتنی بر هوش مصنوعی با هدف آشنایی عملی با معماری AI Chat، استریم پاسخ‌ها، مدیریت مکالمات، تعامل زنده با رابط کاربری و پروتکل MCP برای فراهم کردن امکان تعامل AI Agentها با وب‌سایت.
 endDate: 2026-06-21
-image: ""
+image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/AI/chat-template.nuxt.dev_chat_c5c60e3c-577c-40da-bc9d-750af70c8a7a.png"
 images:
-  - src: ""
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/AI/chat-template.nuxt.dev_chat_c5c60e3c-577c-40da-bc9d-750af70c8a7a.png"
     alt: رابط کاربری سیستم AI Chat
-  - src: ""
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/AI/chat-template.nuxt.dev_chat_c5c60e3c-577c-40da-bc9d-750af70c8a7a%20%281%29.png"
+    alt: رابط کاربری سیستم AI Chat
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/AI/chat-template.nuxt.dev_chat_c5c60e3c-577c-40da-bc9d-750af70c8a7a%20%282%29.png"
     alt: نمایش استریم زنده پاسخ هوش مصنوعی
-  - src: ""
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/AI/chat-template.nuxt.dev_chat_c5c60e3c-577c-40da-bc9d-750af70c8a7a%20%283%29.png"
     alt: رابط مدیریت و نمایش مکالمات
-  - src: ""
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/AI/chat-template.nuxt.dev_chat_c5c60e3c-577c-40da-bc9d-750af70c8a7a%20%284%29.png"
     alt: تعامل AI Agent با وب‌سایت
 links:
   - label: مشاهده پروژه
