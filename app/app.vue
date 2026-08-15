@@ -18,6 +18,8 @@ useSeoMeta({
   ogImage: "/images/profile.jpg",
   twitterImage: "/images/profile.jpg",
   twitterCard: "summary_large_image",
+  ogImageAlt: "ابوالفضل کیومرثی",
+  ogImageType: "image/jpg",
 });
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
