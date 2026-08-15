@@ -10,6 +10,10 @@ image: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/selora-ki
 images:
   - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/selora-kiumarsi.up.railway.app_.png"
     alt: اصلی سلورا
+
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/selora-lihthouse.png"
+    alt: اصلی سلورا
+
   - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/Screenshot_20260811_172646_Chrome.jpg"
     alt: اصلی سلورا
   - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/selora-kiumarsi.up.railway.app_products_PQKQ6OQSA_womens-clothing-15-1785929626157%20%283%29.png"
@@ -35,6 +39,9 @@ images:
   - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/Screenshot_20260811_172639_Chrome.jpg"
     alt: اصلی سلورا
 
+  - src: "https://qr2tnegks1uabe3e.public.blob.vercel-storage.com/selora/selora-lihthouse.png"
+    alt: اصلی سلورا
+
 startDate: 2025-12-22
 
 tags:
@@ -53,64 +60,63 @@ tags:
   - CI/CD
 
 technologies:
+  - category: frontend
+    items:
+      - Nuxt.js 4
+      - Vue.js 3
+      - TypeScript
+      - Nuxt UI
+      - Tailwind CSS v4
+      - Pinia
+      - VueUse
 
-- category: frontend
-  items:
-  - Nuxt.js 4
-  - Vue.js 3
-  - TypeScript
-  - Nuxt UI
-  - Tailwind CSS v4
-  - Pinia
-  - VueUse
+  - category: backend
+    items:
+      - Nitro
+      - Node.js
+      - REST API
+      - JWT
+      - bcrypt
+      - Prisma
+      - Firebase Admin
+      - Object Storage (S3)
 
-- category: backend
-  items:
-  - Nitro
-  - Node.js
-  - REST API
-  - JWT
-  - bcrypt
-  - Prisma
-  - Firebase Admin
-  - Object Storage (S3)
+  - category: database
+    items:
+      - MySQL
+      - Prisma
+      - Drizzle
+      - Database Modeling
 
-- category: database
-  items:
-  - MySQL
-  - Prisma
-  - Drizzle
-  - Database Modeling
+  - category: notifications
+    items:
+      - Push Notifications
+      - Firebase Cloud Messaging (FCM)
+      - Firebase Admin SDK
+      - Web Push
+      - Service Worker
+      - Notification APIs
 
-- category: notifications
-  items:
-  - Push Notifications
-  - Firebase Cloud Messaging (FCM)
-  - Firebase Admin SDK
-  - Web Push
-  - Service Worker
-  - Notification APIs
+  - category: architecture
+    items:
+      - Atomic Design
+      - Modular Architecture
+      - Component-Based Architecture
+      - Nuxt Layers
 
-- category: architecture
-  items:
-  - Atomic Design
-  - Modular Architecture
-  - Component-Based Architecture
-  - Nuxt Layers
+  - category: seo
+    items:
+      - Nuxt Sitemap
+      - Multi Sitemap
+      - Nuxt Schema.org
+      - Nuxt OG Image
+      - Nuxt Robots
 
-- category: seo
-  items:
-  - Nuxt Sitemap
-  - Multi Sitemap
-  - Nuxt Schema.org
-  - Nuxt OG Image
-  - Nuxt Robots
-
-- category: testing
-  items:
-  - Vitest
-  - Playwright
-  - Nuxt Test Utils
+  - category: testing
+    items:
+      - Vitest
+      - Playwright
+      - Nuxt Test Utils
 
 url: https://selora-kiumarsi.up.railway.app/
 
@@ -123,4 +129,3 @@ links:
     to: https://selora-kiumarsi.up.railway.app/sitemap_index.xml
     target: _blank
     icon: i-lucide-map
-
